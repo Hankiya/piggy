@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fund_type_setting" >
+
+        <!--
+        <item>只看自选#1</item>
+        <item>只看可购买#2</item>
+        -->
+        <item>合并股票型与混合型#16</item>
+        <item>合并货币型与理财型#32</item>
+        <item>货币型排行中隐藏B类#4</item>
+        <item>全部排行中隐藏结构型#8</item>
+    </string-array>
+    <string-array name="tb_menu_titles" >
+        <item>首页_com.howbuy.frag.FragTbHome</item>
+        <item>自选_com.howbuy.frag.FragTbOptional</item>
+        <item>排行_com.howbuy.frag.FragTbRank</item>
+        <item>资讯_com.howbuy.frag.FragTbInfos</item>
+        <item>交易_com.howbuy.frag.FragTbTrade</item>
+    </string-array>
+    <string-array name="char_cycle">
+        <item>@string/tb_fund_cycle_7d</item>
+        <item>@string/tb_fund_cycle_1m</item>
+        <item>@string/tb_fund_cycle_3m</item>
+        <item>@string/tb_fund_cycle_1n</item>
+        <item>@string/tb_fund_cycle_now</item>
+        <item>@string/tb_fund_cycle_more</item>
+    </string-array>
+    <string-array name="secret_list_key" >
+        <item>k1</item>
+        <item>k2</item>
+        <item>k3</item>
+    </string-array>
+    <string-array name="secret_list_value" >
+        <item>v1</item>
+        <item>v2</item>
+        <item>v3</item>
+    </string-array>
+
+</resources>

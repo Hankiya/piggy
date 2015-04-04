@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/xml_artical_undo_bk"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/tv_artical_del_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/xml_artical_undo_right_bk"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_action_undo"
+            android:gravity="center_vertical"
+            android:onClick="onXmlBtClick"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="撤销"
+            android:textColor="#ffeeeeee"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/tv_artical_del_cancle"
+            android:background="#ffeeeeee" />
+
+        <TextView
+            android:id="@+id/tv_artical_del_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_artical_del_cancle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/tv_artical_del_cancle"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/tv_artical_del_cancle"
+            android:gravity="center_vertical"
+            android:text="文章已经删除"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</FrameLayout>

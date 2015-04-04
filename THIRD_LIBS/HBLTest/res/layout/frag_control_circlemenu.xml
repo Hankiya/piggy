@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/bt_enable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="disable"
+            android:textOn="able"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_keep_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="disable_select"
+            android:textOn="able_select"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_sound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="sound_off"
+            android:textOn="sound_on"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_roate_backgroud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="roat_bk_off"
+            android:textOn="roat_bk_on"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/bt_select_sector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="unclick_sector"
+            android:textOn="click_sector"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_select_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="unclick_center"
+            android:textOn="click_center"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_roate_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="unroat_sector"
+            android:textOn="roat_sector"
+            android:textSize="10sp" />
+
+        <ToggleButton
+            android:id="@+id/bt_roate_enable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onXmlBtClick"
+            android:padding="0dp"
+            android:textOff="disable roat"
+            android:textOn="able roat"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <com.howbuy.lib.control.CircleMenu
+        android:id="@+id/lay_menu"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_launcher"
+        android:padding="30dp" />
+
+</LinearLayout>

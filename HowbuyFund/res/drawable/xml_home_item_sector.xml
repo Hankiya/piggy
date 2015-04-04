@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"  >
+         <shape android:shape="rectangle">
+         <solid android:color="@color/home_item_pressed" />
+           <padding android:left="@dimen/aty_horizontal_margin" 
+                android:right="@dimen/aty_horizontal_margin"
+                android:top="@dimen/list_item_padding_vertical"
+                android:bottom="@dimen/list_item_padding_vertical"/>
+         </shape>
+    </item>
+    
+          <item android:state_enabled="false"  >
+         <shape android:shape="rectangle">
+         <solid android:color="@color/home_item_disable" />
+           <padding android:left="@dimen/aty_horizontal_margin" 
+                android:right="@dimen/aty_horizontal_margin"
+                android:top="@dimen/list_item_padding_vertical"
+                android:bottom="@dimen/list_item_padding_vertical"/>
+         </shape>
+    </item>
+    
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/home_item_normal" />
+            <padding android:left="@dimen/aty_horizontal_margin" 
+                android:right="@dimen/aty_horizontal_margin"
+                android:top="@dimen/list_item_padding_vertical"
+                android:bottom="@dimen/list_item_padding_vertical"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="11dp"
+    android:paddingLeft="@dimen/aty_horizontal_margin"
+    android:paddingRight="@dimen/aty_horizontal_margin"
+    android:paddingTop="11dp" >
+    <TextView
+        style="@style/tv_title"
+        android:layout_gravity="left|center_vertical"
+        android:id="@+id/tv_title" 
+        android:textSize="16sp"  />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<com.howbuy.control.VerticalScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:background="#eee" android:descendantFocusability="blocksDescendants"
+	android:fillViewport="true" android:scrollbars="none">
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<include android:id="@+id/lay_home_adv" layout="@layout/com_pager_adv" />
+		<include android:id="@+id/lay_home_navi" layout="@layout/com_home_navi" />
+		<FrameLayout android:layout_width="match_parent"
+			android:layout_height="@dimen/home_stock_height">
+			<include android:id="@+id/lay_home_stock_index" layout="@layout/com_home_stock" />
+			<ProgressBar android:id="@+id/pb_home_stock" android:layout_margin="5dp"
+				style="?android:attr/progressBarStyleSmall" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="right|top" />
+		</FrameLayout>
+		<include android:id="@+id/lay_home_top_sales" layout="@layout/com_home_top5" />
+		<include android:id="@+id/lay_home_top_recommend" layout="@layout/com_home_top5" />
+		<include android:id="@+id/lay_home_piggy" layout="@layout/com_home_piggy" />
+		<include android:id="@+id/lay_home_simu" layout="@layout/com_home_simu" />
+	</LinearLayout>
+
+</com.howbuy.control.VerticalScrollView>

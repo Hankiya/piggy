@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/home_navi_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lay_navi_optional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/home_navi_icon_height"
+            android:layout_height="@dimen/home_navi_icon_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/xml_tb_optional" />
+
+        <TextView
+            style="@style/tv_select_normal"
+            android:text="@string/tb_title_optional"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_navi_rank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/home_navi_icon_height"
+            android:layout_height="@dimen/home_navi_icon_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/xml_tb_rank" />
+
+        <TextView
+            style="@style/tv_select_normal"
+            android:text="@string/tb_title_rank"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_navi_infos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/home_navi_icon_height"
+            android:layout_height="@dimen/home_navi_icon_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/xml_tb_infos" />
+
+        <TextView
+            style="@style/tv_select_normal"
+            android:text="@string/tb_title_infos"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_navi_trade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/home_navi_icon_height"
+            android:layout_height="@dimen/home_navi_icon_height"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/xml_tb_trade" />
+
+        <TextView
+            android:id="@id/tb_title_id"
+            style="@style/tv_select_normal"
+            android:text="@string/tb_title_trade"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

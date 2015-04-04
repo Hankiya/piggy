@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/howbuy.android.palmfund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <include
+            layout="@layout/com_list_opt_title"
+            android:visibility="visible" />
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/buttom_lay"
+            android:layout_below="@+id/option_title_lay"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="multipleChoice"
+            android:divider="@drawable/divider_padding"
+            android:dividerHeight="1px"
+            android:visibility="visible"
+            dslv:collapsed_height="1px"
+            dslv:drag_enabled="false"
+            dslv:drag_handle_id="@+id/drag_handle"
+            dslv:drag_scroll_start="0.5"
+            dslv:drag_start_mode="onDown"
+            dslv:float_alpha="1.0"
+            dslv:remove_enabled="false"
+            dslv:remove_mode="flingRemove"
+            dslv:slide_shuffle_speed="0.3" />
+
+        <FrameLayout
+            android:id="@+id/buttom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <com.actionbarsherlock.internal.widget.IcsLinearLayout
+                android:id="@+id/buttom_tbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d2d2d2"
+                android:divider="@drawable/custom_tab_indicator_divider"
+                android:dividerPadding="5dp"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/order_name_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/nav_button"
+                    android:text="@string/sort_by_name" />
+
+                <Button
+                    android:id="@+id/order_type_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/nav_button"
+                    android:text="@string/sort_by_type" />
+            </com.actionbarsherlock.internal.widget.IcsLinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nodata_other_click"
+                android:layout_width="fill_parent"
+                android:paddingLeft="16dp"
+                android:visibility="gone"
+                android:paddingRight="16dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/sync_tips"
+                    android:textColor="@color/text_title"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/close"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nodata_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/nodata_addclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/opt_blank_sector"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_invite"
+                android:text="@string/no_optional" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:text="@string/add_optional"
+                android:textColor="@color/text_normal"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

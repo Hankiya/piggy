@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:paddingTop="36dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108dp"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/register_auth_des"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_authcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textColor="#333"
+                    android:textColorHint="#7f999999"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/xml_tv_auth_bk"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="125dp"
+                    android:onClick="onXmlBtClick"
+                    android:text="@string/register_auth_resend"
+                    android:textColor="#333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.actionbarsherlock.internal.widget.IcsLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#d2d2d2"
+        android:divider="@drawable/custom_tab_indicator_divider"
+        android:dividerPadding="5dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_ib_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onXmlBtClick"
+            android:text="@string/step_pre"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_ib_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onXmlBtClick"
+            android:text="@string/step_done"
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </com.actionbarsherlock.internal.widget.IcsLinearLayout>
+
+</FrameLayout>

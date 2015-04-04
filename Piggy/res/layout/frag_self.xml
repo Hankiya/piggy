@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/buttom_lay">
+		<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+			<LinearLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:paddingTop="10dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:orientation="vertical">
+				<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_zz"/>
+				<TextView android:gravity="center_vertical" android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获中国证券会首批颁牌" android:textSize="16sp"/>
+				<View android:layout_width="fill_parent" android:layout_marginTop="10dp" android:layout_height="1px" android:background="#d9d9d9" android:paddingTop="15dp" android:paddingBottom="15dp"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="15dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_horizontal_margin">
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9" android:paddingTop="15dp" android:paddingBottom="15dp"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+					<TextView android:textColor="@color/text_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="好买股东"/>
+					<TextView android:layout_marginLeft="10dp"  android:textColor="@android:color/black"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:text="腾讯、联想"/>
+					<TextView android:layout_marginLeft="3dp" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="战略注资" android:background="#FD9825" android:textColor="@android:color/white"/>
+				</LinearLayout>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9" android:layout_marginTop="10dp"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="3dp">
+					<TextView android:textColor="@color/text_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监督机构"/>
+					<TextView android:textColor="@color/text_input_title" android:gravity="center" android:drawableLeft="@drawable/ic_bz_one" android:layout_marginLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国证券监督管理委员会"/>
+				</LinearLayout>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9" android:layout_marginTop="3dp"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="3dp">
+					<TextView android:textColor="@color/text_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监督银行"/>
+					<TextView android:textColor="@color/text_input_title" android:gravity="center" android:drawableLeft="@drawable/ic_bz_two" android:layout_marginLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国民生银行（资金全程托管）"/>
+				</LinearLayout>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9" android:layout_marginTop="3dp"/>
+			</LinearLayout>
+
+			<TextView android:textSize="13sp" android:padding="5dp" android:layout_marginTop="15dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/safe_toast_bg" android:text="好买郑重承诺，使用中任何原因造成资金损失，好买先行赔付。" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="5dp"   android:paddingBottom="5dp" android:paddingLeft="13sp" android:paddingRight="@dimen/activity_horizontal_margin" android:orientation="vertical">
+				<TextView android:textStyle="bold" android:drawableLeft="@drawable/ic_dun" android:text="三重密码" android:gravity="center_vertical" android:textSize="17sp" android:textColor="#4FCFAE" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:paddingLeft="32dp" android:text="登录、交易、手势三重密码，充分保障" android:gravity="center_vertical" android:textSize="15sp" android:textColor="#4d4b4e" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingBottom="5dp" android:paddingLeft="13sp" android:paddingRight="@dimen/activity_horizontal_margin" android:orientation="vertical">
+				<TextView android:textStyle="bold" android:drawableLeft="@drawable/ic_suo" android:text="隐私保护" android:gravity="center_vertical" android:textSize="17sp" android:textColor="#4FCFAE" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:paddingLeft="32dp" android:text="账户信息加密处理，充分保护您的隐私" android:gravity="center_vertical" android:textSize="15sp" android:textColor="#4d4b4e" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingBottom="5dp" android:paddingLeft="13sp" android:paddingRight="@dimen/activity_horizontal_margin" android:orientation="vertical">
+				<TextView android:textStyle="bold" android:drawableLeft="@drawable/ic_xing" android:text="短信提示" android:gravity="center_vertical" android:textSize="17sp" android:textColor="#4FCFAE" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+				<TextView android:paddingLeft="32dp" android:text="存取钱、修改信息，均有手机短信提示" android:gravity="center_vertical" android:textSize="15sp" android:textColor="#4d4b4e" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout android:id="@+id/buttom_lay" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:paddingLeft="18sp" android:paddingRight="18sp" android:orientation="vertical">
+		<howbuy.android.piggy.widget.ImageTextBtn android:layout_marginTop="15dp" android:id="@+id/submit_btn" style="@style/piggy_text_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/btn_sure_bg" android:clickable="true" android:text="免费开户"/>
+	</LinearLayout>
+
+
+
+</RelativeLayout>

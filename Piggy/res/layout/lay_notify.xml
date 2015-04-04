@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nofiy_lay"
+    android:visibility="gone"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/notify_bg"
+   	android:paddingLeft="@dimen/activity_horizontal_margin"
+   	android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/msg"
+        android:textColor="#343233"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_centerVertical="true" 
+        android:layout_alignParentRight="true"
+        android:id="@+id/cancle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_gb" />
+
+</RelativeLayout>

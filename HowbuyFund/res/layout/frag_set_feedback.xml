@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/aty_set_horizontal_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_feedback_title1"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.howbuy.control.CheckHeadText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_bt_rate_bk"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onXmlBtClick"
+                    android:tag="rate_0"
+                    android:text="@string/set_feedback_rate_good"
+                    android:textColor="@drawable/xml_text_rate"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.howbuy.control.CheckHeadText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_bt_rate_bk"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onXmlBtClick"
+                    android:tag="rate_1"
+                    android:text="@string/set_feedback_rate_normal"
+                    android:textColor="@drawable/xml_text_rate"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.howbuy.control.CheckHeadText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xml_bt_rate_bk"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onXmlBtClick"
+                    android:tag="rate_2"
+                    android:text="@string/set_feedback_rate_bad"
+                    android:textColor="@drawable/xml_text_rate"
+                    android:textSize="18sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_feedback_title2"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:minLines="1"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/set_feedback_title3"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:inputType="textPersonName"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/set_feedback_title4"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/set_feedback_edit_hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="#666"
+            android:textColorHint="#7f666666"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+           android:minWidth="186dp"
+           android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/xml_bt_buy_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:onClick="onXmlBtClick"
+            android:text="@string/set_feedback_submit"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

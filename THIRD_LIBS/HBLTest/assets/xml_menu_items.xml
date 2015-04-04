@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list_menu>
+ <menu_item  type="1" clickable="true" checkable="false" rarrable="true" sepable="false">
+     <title>其它测试</title>
+     <summary>????</summary>
+     <state>state1</state>
+     <checked>false</checked>
+     <intent>#Intent;component=com.howbuy.libtest/com.howbuy.aty.AtyEmpty;S.KEY_FRAG_NAME=com.howbuy.frag.Fragxxxx;end</intent>
+     <icon>ic_launcher</icon>
+ </menu_item>
+  <menu_item  type="2" clickable="true" checkable="false" rarrable="true" sepable="false">
+     <title>数据库性能测试</title>
+     <summary>summary2</summary>
+     <state></state>
+     <checked>false</checked>
+     <intent>#Intent;component=com.howbuy.libtest/com.howbuy.aty.AtyEmpty;S.KEY_FRAG_NAME=com.howbuy.frag.FragDbTest;end</intent>
+     <icon>ic_l</icon>
+ </menu_item>
+  <menu_item  type="3" clickable="true" checkable="true" rarrable="false" sepable="true">
+     <title>撑上基金评分</title>
+     <summary>summary3</summary>
+     <state>state3</state>
+     <checked>false</checked>
+     <intent>market://details?id=howbuy.android.palmfund#Intent;action=android.intent.action.VIEW;end</intent>
+ </menu_item>
+ 
+   <menu_item  type="4" clickable="true" checkable="true" rarrable="true" sepable="false">
+     <title>ServiceTest</title>
+     <summary>open enable</summary>
+     <state></state>
+     <checked>true</checked>
+     <intent>#Intent;component=com.howbuy.libtest/com.howbuy.aty.AtyTest;end</intent>
+ </menu_item>
+ 
+    <menu_item  type="5" clickable="true" checkable="false" rarrable="false" sepable="false">
+     <title>圆形菜单测试</title>
+     <summary>summary5</summary>
+     <state>state5</state>
+     <checked>false</checked>
+     <intent>#Intent;component=com.howbuy.libtest/com.howbuy.aty.AtyEmpty;S.KEY_FRAG_NAME=com.howbuy.frag.FragNetTest;end</intent>
+ </menu_item>
+ 
+     <menu_item  type="6" clickable="true" checkable="false" rarrable="false" sepable="false">
+     <title>title6</title>
+     <summary>summary6</summary>
+     <state>state6</state>
+     <checked>false</checked>
+     <intent></intent>
+ </menu_item>
+ 
+      <menu_item  type="7" clickable="true" checkable="false" rarrable="false" sepable="false">
+     <title>title7</title>
+     <summary></summary>
+     <state></state>
+     <checked>false</checked>
+     <intent></intent>
+ </menu_item>
+ 
+       <menu_item  type="8" clickable="true" checkable="false" rarrable="false" sepable="false">
+     <title>title8</title>
+     <summary>summary8</summary>
+     <state></state>
+     <checked>false</checked>
+     <intent></intent>
+ </menu_item>
+ 
+  <menu_item  type="9" clickable="false" checkable="false" rarrable="false" sepable="false">
+     <title>title9</title>
+     <summary>summary9</summary>
+     <state>state9</state>
+     <checked>false</checked>
+     <intent></intent>
+ </menu_item>
+</list_menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/details_manager_list_artical_height"
+    android:paddingLeft="@dimen/aty_horizontal_margin" 
+    android:paddingRight="@dimen/aty_horizontal_margin" 
+    android:paddingTop="@dimen/infs_list_padding_vertical"
+    android:paddingBottom="@dimen/infs_list_padding_vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="任期回报"
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_increase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_toRightOf="@id/tv1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_dateto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv1"
+        android:layout_alignParentLeft="true"
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+</RelativeLayout>

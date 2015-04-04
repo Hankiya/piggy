@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="65dp"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp" >
+
+    <ImageView
+        android:id="@+id/menuitem_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menuitem_tv_title"
+                style="@style/tv_select_title"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/menuitem_tv_summary"
+                style="@style/tv_select_normal"
+                android:text="summary" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/menuitem_tv_alerm"
+            style="@style/tv_normal"
+            android:layout_marginLeft="8dp"
+            android:minWidth="30dp"
+            android:text="NEN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|right"
+        android:minWidth="80dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/menuitem_v_sep"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="#ffff0000" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/menuitem_tv_state"
+                style="@style/tv_select_normal"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="state" />
+
+            <CheckBox
+                android:id="@+id/menuitem_cb_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:focusable="false" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menuitem_iv_goto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:scrollingCache="false"
+        android:src="@drawable/xml_bt_clearn" />
+
+</LinearLayout>

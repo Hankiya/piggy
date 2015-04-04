@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.howbuy.control.VipHeadView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff0000"
+    android:tag="cent_v"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:id="@+id/vip_head_lay_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/vip_head_iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" 
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+
+        <View
+            android:id="@+id/vip_head_v_hover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_img_hover_bk"
+            android:clickable="true" />
+    </FrameLayout>
+
+</com.howbuy.control.VipHeadView>

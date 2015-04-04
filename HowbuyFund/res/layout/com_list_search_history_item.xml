@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/theme_fund_item_background_holo_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="8dip"
+    android:paddingTop="5dip" >
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/del_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clock" />
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/name"
+        android:paddingLeft="5dp"
+        android:textSize="17sp"
+        android:textColor="@color/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"  />
+
+</LinearLayout>

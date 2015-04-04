@@ -1,0 +1,171 @@
+<com.howbuy.control.HomeStockLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/custom_tab_indicator_divider"
+    android:dividerPadding="1px"
+    android:onClick="onXmlBtClick"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/list_item_padding_vertical"
+    android:paddingTop="@dimen/list_item_padding_vertical"
+    android:showDividers="middle" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_stock_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="1dp"
+                android:text="上证指数"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <com.howbuy.control.NumBitView
+                android:id="@+id/tv_stock_value1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- android:text="↑13.76 0.68%" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_stock_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xml_stock_increase_state" />
+
+                <TextView
+                    android:id="@+id/tv_stock_increase1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_stock_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="1dp"
+                android:text="深证指数"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <com.howbuy.control.NumBitView
+                android:id="@+id/tv_stock_value2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- android:text="↑13.76 0.68%" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_stock_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xml_stock_increase_state" />
+
+                <TextView
+                    android:id="@+id/tv_stock_increase2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_stock_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="1dp"
+                android:text="创业板指"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <com.howbuy.control.NumBitView
+                android:id="@+id/tv_stock_value3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- android:text="↑13.76 0.68%" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_stock_state3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="3dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xml_stock_increase_state" />
+
+                <TextView
+                    android:id="@+id/tv_stock_increase3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</com.howbuy.control.HomeStockLayout>

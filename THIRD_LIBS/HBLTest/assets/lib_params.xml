@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interfaces>
+
+    <!--
+       startTime="0"
+        endTime="0"
+    -->
+	<AAParSimuRecommend />
+	<AAParFundChart fundCode="519670" isPrivate="0"
+		needDataCount="30" />
+
+	<AAParUserStatusCheck custNo="1" />
+
+	<AAParFundTradeInfo fundCode="" isPrivate="0" />
+
+	<AAParFtenSimuBasicInf code="P01230" />
+
+	<AAParFundInfoByType type="1" />
+
+	<AAParFundHistoryValue fundCode="" isPrivate="0"
+		pageCount="1" pageNum="1" />
+
+	<AAParFtenHeavyHoldingInfo fundCode="150153"
+		isPrivate="0" season="20131231" />
+
+	<ParCheckAppUpdate />
+
+	<ParDingYue authCode="" cpnx="" gsbj="" mDeviceTag=""
+		phoneNum="" type="0" yqnh="" />
+
+	<ParDingYueCheckCode phoneNum="" />
+
+	<ParFeedback name="" content="" email="" evaluation=""
+		phone="" />
+
+	<ParFilterCondition version="" />
+
+	<ParMakeAppointment custName="" fundType="" memo=""
+		mobile="" />
+
+	<ParNewsByPage basicType="" currentPage="1" newestVer="0"
+		newsType="" pageCount="1" />
+
+	<ParResearchByPage basicType="" currentPage="1"
+		newestVer="0" opinionType="" pageCount="1" />
+
+	<ParRunChartData tzfxCode="" />
+
+	<ParShare2Friends phones="" />
+
+	<ParTrustListByID pids="G0000486" />
+
+	<ParTrustListByPage bestFlag="0" clrq="" cpnx=""
+		currentPage="1" dataVersion="" fsrq="" fszt="" gjz="" gsbj=""
+		pageCount="1" qszj="" tzfx="" xtfl="" xtgs="" yqsy="" />
+
+	<ParAdvertisementList imageHeight="450"
+		imageWidth="1080" />
+
+	<ParBook columns="" customNo="" deviceId="" phoneNum=""
+		productId="" token="" type="0" />
+
+	<ParCheckCode phone="" regSource="" />
+
+	<ParCommentByPage articleType="0" code="" currentPage="1"
+		pageCount="1" />
+
+	<ParCommentByTimestamp articleType="0" code=""
+		posttime="" />
+
+	<ParFinanceDebtList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFinanceIndexList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFixedInvestOrderByPage kind="" order="0"
+		pageCount="" pageNum="0" type="0" />
+
+	<ParFtenAchieveProformance code="" isPrivate="0" />
+
+	<ParFtenCompanyInfo code="" justName="0" />
+
+	<ParFtenDebtList code="" currentPage="1" pageCount="1" />
+
+	<ParFtenfundAnnoList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFtenHeavyHolding code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFtenInvestList code="" currentPage="1" pageCount="1" />
+
+	<ParFtenManagerInf isPrivate="0" manageid="" />
+
+	<ParFtenManagerList code="" />
+
+	<ParFtenProfitDistributeList code=""
+		currentPage="1" pageCount="1" />
+
+	<ParFtenPropertyConfigList code=""
+		currentPage="1" pageCount="1" />
+
+	<ParFtenQuarterReportList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFtenRecessiveHeavyHolding code=""
+		currentPage="1" pageCount="1" />
+
+	<ParFtenRecruitList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFtenTicketCombinedList code=""
+		currentPage="1" pageCount="1" />
+
+	<ParFtenYearReportList code="" currentPage="1"
+		pageCount="1" />
+
+	<ParFundRunChartData endDate="" fundCode=""
+		startDate="" />
+
+	<ParFundsNetValue cstmCodes="" cstmFlag="0" dateFlag="0"
+		orderIncrease="0" orderType="0" pageCount="1" pageNum="1" type="0" />
+
+	<ParFundsNetValueByIDs fundCode="" />
+
+	<ParFundsNetValueBatch type="4" typeVer="20110301" />
+
+	<ParFundsValueByPage cstmCodes="" cstmFlag="0"
+		dateFlag="0" orderIncrease="0" orderType="0" pageCount="1" pageNum="1"
+		type="" />
+
+	<ParLogin loginPasswd="" userName="" />
+
+	<ParNewsAndResearchByKeyword currentPage="1"
+		keyword="" pageCount="1" />
+
+	<ParNewsByKeyword currentPage="1" keyword=""
+		pageCount="1" />
+
+	<ParFundPerformance code="110051" isPrivate="0" />
+
+	<ParRegister password="" phone="" regSource="2"
+		verificationCode="" />
+
+	<ParResearchByKeyword currentPage="1" keyword=""
+		pageCount="1" />
+
+	<ParSendComment articleType="0" code="" comments=""
+		refCommentID="" userid="" username="" />
+
+	<ParSendUserActions infoList="" />
+
+	<ParSimuFundsValueByPage cstmCodes="" cstmFlag="0"
+		dateFlag="0" orderIncrease="0" orderType="0" pageCount="1" pageNum="1" />
+
+	<ParStart basicInfoVer="" companyVer="" fbsVer="" hbsVer=""
+		kfsVer="" managerVer="" newsTypeVer="" opinionTypeVer="" smVer="" />
+
+	<ParSyncOptional custNo="" loginPasswd="" opeInfos=""
+		userName="" />
+
+	<ParTrustContent id="" />
+
+	<ParTrustList />
+
+	<ParUpAndDownCount code="" />
+
+	<ParUpdateCompany companyInfoVer="" />
+
+	<ParUpdateManager managerInfoVer="" />
+
+	<ParUpdateOpenFundBasicInfo fundInfoVer="" />
+
+	<ParUpdateSimuFundBasicInfo fundInfoVer="" />
+
+	<ParUploadContact contactsInfoList="" />
+
+	<ParUpOrDownFund action="1" code="0" custid="" type="" />
+
+</interfaces>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_marginTop="50dip" android:orientation="vertical">
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cs"/>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:text="绑卡超时" android:layout_marginTop="20dp"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:layout_marginTop="25dp">
+		<Button android:id="@+id/sure_btn" style="@style/piggy_text_button" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/btn_sure_bg" android:clickable="true" android:text="@string/retry"/>
+		<Button android:id="@+id/cancle_btn" style="@style/piggy_text_button" android:layout_marginTop="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/btn_register_bg" android:clickable="true" android:text="下次再绑"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>�ޱ����ĵ�</title>
+<script>
+Date.prototype.Format = function (fmt) { 
+    var o = {
+        "M+": this.getMonth() + 1, //�·� 
+        "d+": this.getDate(), //�� 
+        "h+": this.getHours(), //Сʱ 
+        "m+": this.getMinutes(), //�� 
+        "s+": this.getSeconds() //�� 
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+function doResult(result){
+	var res= result.split("~~");
+	var jsonstr="";
+	for(var i=0; i<res.length;i++){
+		if(res[i].indexOf("~")>0){
+			var data = res[i].split("~");
+			jsonstr+="{\"t\":\""+data[1]+"\",\"cp\":\""+data[3]+"\",\"iv\":\""+data[4]+"\",\"ip\":\""+data[5]+"%\"},";
+		}
+	}
+	jsonstr="["+jsonstr.substr(0,jsonstr.length-1)+"]";	
+	return jsonstr;
+}
+function getData(url){ 
+	var docHead = document.getElementsByTagName("head")[0];
+    var docJs = document.createElement("script");
+    docJs.src = url;
+    docJs.onload = docJs.onreadystatechange = function(){
+        if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete"){
+          	//���JS
+          	docHead.removeChild(docJs);  
+			var time = new Date().Format("yyyy-MM-dd hh:mm:ss");  
+			var jsonStr ="{\"dt\":\""+time+"\",\"pi\":"+doResult(v_s_sh000001+v_s_sz399001+v_s_sz399006)+"}";  
+			document.getElementById("stock").innerHTML=jsonStr;
+            // window.location.href="HB://resultReachNotify";
+            JsMethod.pickStockInf(jsonStr);
+        }else{
+         console.log(this.readyState);
+         }
+    }
+    docHead.appendChild(docJs);
+}
+getData("http://qt.gtimg.cn/q=s_sh000001,s_sz399001,s_sz399006");
+
+function getDataManually() {
+    getData("http://qt.gtimg.cn/q=s_sh000001,s_sz399001,s_sz399006");
+}
+
+//���ⷽ��
+function stockMsg(){
+	var val = document.getElementById("stock").innerHTML;
+	return val;
+}
+</script>
+</head>
+<body>
+<div id="stock"></div>
+</body>
+</html>

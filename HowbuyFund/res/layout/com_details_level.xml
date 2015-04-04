@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:gravity="center_vertical" android:orientation="horizontal">
+
+	<TextView android:id="@+id/tv1" android:paddingTop="20dp"
+		android:paddingBottom="20dp" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:ellipsize="end"
+		android:gravity="center_vertical" android:maxLength="10"
+		android:paddingLeft="@dimen/aty_horizontal_margin"
+		android:paddingRight="@dimen/aty_horizontal_margin"
+		android:singleLine="true" android:text="好买评级" android:textColor="#333"
+		android:textSize="17sp" />
+
+	<RatingBar android:id="@+id/rb_level" style="@style/RatingBarStyle"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical" android:isIndicator="true"
+		android:max="5" android:maxHeight="30dp" android:stepSize="1" />
+
+</LinearLayout>

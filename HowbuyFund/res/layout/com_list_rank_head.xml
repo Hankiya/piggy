@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<com.howbuy.control.CheckHeadText
+		android:id="@+id/tv_head" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="@color/item_head_bk"
+		android:paddingBottom="@dimen/list_item_padding_vertical"
+		android:paddingLeft="@dimen/aty_horizontal_margin"
+		android:paddingRight="@dimen/aty_horizontal_margin"
+		android:paddingTop="@dimen/list_item_padding_vertical" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:paddingBottom="@dimen/list_item_padding_vertical"
+		android:paddingLeft="@dimen/aty_horizontal_margin"
+		android:paddingRight="6dp" android:paddingTop="@dimen/list_item_padding_vertical">
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+			<TextView android:id="@+id/tv_rank" android:layout_width="wrap_content"
+				android:layout_height="16sp" android:layout_marginRight="8dp"
+				android:layout_marginTop="3sp" android:background="@drawable/xml_range_num_bk"
+				android:gravity="center" android:includeFontPadding="false"
+				android:minWidth="16sp" android:paddingLeft="@dimen/rank_index_padding"
+				android:paddingRight="@dimen/rank_index_padding" android:text="1"
+				android:textColor="#fff" android:textSize="12sp" />
+		</LinearLayout>
+
+		<RelativeLayout android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_weight="9"
+			android:orientation="vertical">
+
+			<TextView android:id="@+id/tv_title" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:ellipsize="end"
+				android:singleLine="true" android:textColor="#333" android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_code" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_below="@id/tv_title"
+				android:textColor="#666" android:textSize="12sp" />
+
+			<ImageView android:id="@+id/iv_grade" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignBottom="@id/tv_title"
+				android:layout_alignTop="@id/tv_title" android:layout_toRightOf="@id/tv_title"
+				android:scaleType="centerInside" />
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_weight="4.5"
+			android:gravity="right" android:orientation="vertical">
+
+			<TextView android:id="@+id/tv_increase"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="17sp" />
+
+			<TextView android:id="@+id/tv_value" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#999"
+				android:textSize="12sp" />
+		</LinearLayout>
+
+		<CheckBox android:id="@+id/cb_collect" style="@style/check_box_style"
+			android:layout_width="35dp" android:layout_height="35dp"
+			android:layout_marginLeft="30dp" android:focusable="false"
+			android:onClick="onXmlBtClick" />
+
+	</LinearLayout>
+</LinearLayout>

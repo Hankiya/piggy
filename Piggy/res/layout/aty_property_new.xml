@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootview" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+	<ViewStub android:id="@+id/activity_property_unlogin_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout="@layout/aty_property_unlogin"/>
+	<ViewStub android:id="@+id/activity_property_logined_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout="@layout/aty_property_logined"/>
+</LinearLayout>

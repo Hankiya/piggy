@@ -1,0 +1,56 @@
+<resources>
+
+    <dimen name="tb_height">49dp</dimen>
+    <dimen name="tb_icon_height">28dp</dimen>
+    <dimen name="item_head_height">26dp</dimen>
+    <dimen name="text_stock_size">26sp</dimen>
+    <dimen name="text_large_size">22sp</dimen>
+    <dimen name="text_title_size">18sp</dimen>
+    <dimen name="text_normal_size">14sp</dimen>
+    <dimen name="text_small_size">12sp</dimen>
+    <dimen name="home_margin_item">5dp</dimen>
+    <dimen name="home_margin_edge">9dp</dimen>
+
+    <!-- start:common dimen -->
+    <dimen name="aty_horizontal_margin">16dp</dimen>
+    <dimen name="aty_vertical_margin">16dp</dimen>
+    <dimen name="aty_set_horizontal_margin">28dp</dimen>
+    <dimen name="list_item_padding_vertical">8dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+    <dimen name="rank_index_padding">2dp</dimen>
+    <!-- end:common dimen -->
+
+
+    <!-- start:home dimen -->
+    <dimen name="home_navi_height">90dp</dimen>
+    <dimen name="home_navi_icon_height">44dp</dimen>
+    <dimen name="home_stock_height">95dp</dimen>
+    <dimen name="home_head_height">44dp</dimen>
+    <dimen name="home_char_height">200dp</dimen>
+    <!-- end:home dimen -->
+
+
+    <!-- start:infs dimen -->
+    <dimen name="infs_list_padding_vertical">8dp</dimen>
+    <!-- end:infs dimen -->
+
+
+    <!-- start:details dimen -->
+    <dimen name="details_margin_horizonal">14dp</dimen>
+    <dimen name="details_simple_list_height">42dp</dimen>
+    <dimen name="details_simple_list_margin_top">34dp</dimen>
+    <dimen name="details_company_margin_horizonal">20dp</dimen>
+    <dimen name="details_company_head_height">30dp</dimen>
+    <dimen name="details_manager_list_artical_height">52dp</dimen>
+    <dimen name="details_holddetails_list_height">44dp</dimen>
+    <dimen name="details_fund_history_list_item_height">38dp</dimen>
+    <dimen name="details_fund_history_list_head_height">28dp</dimen>
+    <!-- end:details dimen -->
+
+
+    <!-- start:trade dimen -->
+    <dimen name="trade_tab_height">48dp</dimen>
+    <dimen name="trade_tab_icon_width">48dp</dimen>
+    <!-- end:trade dimen -->
+
+</resources>

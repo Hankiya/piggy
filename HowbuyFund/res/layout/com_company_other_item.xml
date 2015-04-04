@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="@dimen/details_simple_list_height"
+	android:layout_marginTop="1dp" android:gravity="center_vertical"
+	android:orientation="horizontal" android:paddingLeft="@dimen/details_company_margin_horizonal"
+	android:paddingRight="@dimen/details_company_margin_horizonal">
+
+	<TextView android:id="@+id/tv_title" style="@style/tv_normal"
+		android:layout_width="0dp" android:layout_weight="1"
+		android:textColor="#333" android:textSize="16sp" />
+
+	<TextView android:id="@+id/tv_state" style="@style/tv_normal"
+		android:textColor="#999" android:textSize="16sp" />
+
+</LinearLayout>
+ 

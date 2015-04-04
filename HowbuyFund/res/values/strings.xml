@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" -->
+    <!-- start:tab标题 -->
+    <string name="app_name" >掌上基金</string>
+    <string name="tb_title_home" >掌上基金</string>
+    <string name="tb_title_optional" >自选</string>
+    <string name="tb_title_rank" >排行</string>
+    <string name="tb_title_infos" >资讯</string>
+    <string name="tb_title_trade" >交易</string>
+    <string name="tb_title_search" >搜索</string>
+    <string name="tb_fund_cycle_7d" >7天</string>
+    <string name="tb_fund_cycle_1m" >1个月</string>
+    <string name="tb_fund_cycle_3m" >3个月</string>
+    <string name="tb_fund_cycle_1n" >1年</string>
+    <string name="tb_fund_cycle_now" >今年</string>
+    <string name="tb_fund_cycle_more" >最大</string>
+    <string name="home_title_recommend" >好买推荐</string>
+    <string name="home_title_topsales" >一周热销</string>
+    <string name="home_des_income" >近一年收益</string>
+    <string name="home_stock_shang" >上证指数</string>
+    <string name="home_stock_sheng" >深圳成指</string>
+    <string name="home_stock_chuang" >创业板指</string>
+    <string name="menu_text_collect" >收藏</string>
+    <string name="menu_text_uncollect" >取消收藏</string>
+    <string name="menu_text_account" >登录云账号</string>
+    <string name="menu_text_setting" >设置</string>
+    <string name="menu_text_about" >关于好买</string>
+    <string name="menu_text_optional" >只看自选</string>
+    <string name="menu_text_onsale" >只看可购买</string>
+    <string name="menu_text_ranksetting" >分类选项</string>
+
+    <!-- end:tab标题 -->
+    <item name="root_id" type="id"/>
+    <item name="key_tag0" type="id"/>
+    <item name="key_tag1" type="id"/>
+    <item name="key_tag2" type="id"/>
+    <item name="tb_title_id" type="id"/>
+    <item name="tb_icon_id" type="id"/>
+    <item name="tb_msg_id" type="id"/>
+
+    <string name="sort_by_type" >按类型</string>
+    <string name="sort_by_name" >按名称</string>
+    <string name="fundname" >基金简称</string>
+    <string name="fundname_simu" >私募简称</string>
+    <string name="fundjjjz" >净值</string>
+    <string name="hbdr" >日增幅</string>
+    <string name="sync_tips">登录云账号，在线保存自选数据</string>
+    
+    <string name="no_optional" >没有自选</string>
+    <string name="add_optional" >没有自选，点击添加</string>
+    <string name="search" >搜索</string>
+    <string name="search_no_result_gm" >抱歉，未找到与”%1s“相关的基金产品</string>
+    <string name="search_no_result_sm" >抱歉，未找到与”%1s“相关的私募产品</string>
+    <string name="search_else_product" >其他产品</string>
+    <string name="search_else_product_gm" >与”%1s“相关的公募</string>
+    <string name="search_else_product_sm" >与”%1s“相关的私募</string>
+
+    <string-array name="opt_nv_title">
+        <item>自选基金</item>
+        <item>自选私募</item>
+    </string-array>
+    <string-array name="search_nv_title">
+        <item>基金</item>
+        <item>私募</item>
+    </string-array>
+
+    <string name="hb1y" >月涨幅</string>
+    <string name="dragchangesort" >拖动以改变排序</string>
+    <string name="delete" >删除</string>
+    <string name="top" >顶置</string>
+    <string name="search_hint" >基金简称/代码/拼音</string>
+    <!--  -->
+    <string name="set_title_account" >云账号</string>
+    <string name="set_summary_account" >未登录</string>
+    <string name="set_title_subscribe" >短信订阅</string>
+    <string name="set_title_feedback" >意见反馈</string>
+    <string name="set_title_recommend" >推荐好友</string>
+    <string name="set_title_checkupdate" >检查更新</string>
+    <string name="set_title_push" >推送消息</string>
+    <string name="set_title_band_sina" >新浪微博</string>
+    <string name="set_summary_band_sina" >未绑定</string>
+    <string name="set_summary_checkupdate" >当前版本%1$s</string>
+    <string name="set_category_more" >更多APP</string>
+    <string name="set_category_about" >关于</string>
+    <string name="set_title_app_market" >应用宝</string>
+    <string name="set_title_app_xintuo" >信托大全</string>
+    <string name="set_title_app_chuxuguan" >储蓄罐</string>
+    <string name="set_title_attention_wx" >微信公众账号\"好买财富\"</string>
+    <string name="set_summary_attention_wx" >点击添加</string>
+    <!--  -->
+    <string name="set_about_content_title1" >好买是谁</string>
+    <string name="set_about_title1_sumary1" >·国内首批持牌的独立基金销售机构</string>
+    <string name="set_about_title1_sumary2" >·中国最权威的第三方投资顾问公司</string>
+    <string name="set_about_title1_sumary3" >·携手联想、腾讯共建专业财富管理平台</string>
+    <string name="set_about_content_title2" >涵盖的产品</string>
+    <string name="set_about_title2_sumary1" >·阳光私募基金/TOT</string>
+    <string name="set_about_title2_sumary2" >·公募基金</string>
+    <string name="set_about_title2_sumary3" >·私募股权基金（VC/PE）</string>
+    <string name="set_about_title2_sumary4" >·固定收益类信托</string>
+    <string name="set_about_content_title3" >提供的服务</string>
+    <string name="set_about_title3_sumary1" >·专业优选  推荐的基金排名均在前1/3</string>
+    <string name="set_about_title3_sumary2" >·专属投顾  资产配置方案定制及一对一服务</string>
+    <string name="set_about_title3_sumary3" >·持续跟踪  售后产品跟踪及投资调整服务</string>
+    <string name="set_about_text_server_des" >服务热线:</string>
+    <string name="set_about_text_server_tel" >400-700-9665</string>
+    <string name="set_about_text_rate" >给我评分</string>
+    <!--  -->
+    <string name="set_recommend_txt_des" >掌上基金，最专业的手机理财利器  </string>
+    <string name="set_recommend_txt_share" >分享</string>
+    <string name="set_feedback_title1" >您对掌上基金满意吗？</string>
+    <string name="set_feedback_title2" >请留下宝贵意见</string>
+    <string name="set_feedback_title3" >我们怎么称呼您？</string>
+    <string name="set_feedback_title4" >如果愿意，请留下您的联系方式</string>
+    <string name="set_feedback_edit_hint_email" >邮箱</string>
+    <string name="set_feedback_edit_hint_phone" >手机号码</string>
+    <string name="set_feedback_submit" >提交</string>
+    <string name="set_feedback_rate_good" >满意</string>
+    <string name="set_feedback_rate_normal" >一般</string>
+    <string name="set_feedback_rate_bad" >不满</string>
+    <!--  -->
+    <string name="set_subscribe_des" >好买独家市场观点,专业点评热点事件,定期精选潜力牛基.</string>
+    <string name="set_subscribe_edit_hint_phone" >订阅手机号</string>
+    <string name="set_subscribe_check_week" >每周市场策略</string>
+    <string name="set_subscribe_check_month" >每月精选基金</string>
+    <string name="set_subscribe_submit" >免费订阅</string>
+    <string name="simu_subscribe_phone" >手机号码</string>
+    <string name="simu_subscribe_submit" >预约</string>
+    <string name="simu_subscribe_explain" >请留下您的联系方式,好买专业的投资顾问将在一个工作日内与您联系</string>
+    <!--  -->
+
+    <string name="share_weixin" >微信</string>
+    <string name="share_weixin_circle" >朋友圈</string>
+    <string name="share_weibo" >新浪微博</string>
+    <string name="share_more" >更多</string>
+    <string name="step_cnacle" >取消</string>
+    <string name="step_next" >下一步</string>
+    <string name="step_pre" >上一步</string>
+    <string name="step_done" >完成</string>
+    <string name="txt_login" >登录</string>
+    <string name="txt_register" >注册</string>
+    <string name="login_username_hint" >用户名/邮箱/手机号</string>
+    <string name="login_password_hint" >密码</string>
+    <string name="txt_register_start" >新用户注册</string>
+    <string name="register_phone_des" >手机号码将用作登录名和找回密码的依据</string>
+    <string name="register_auth_des" >请在下面输入您收到的短信验证码,10分钟内有效</string>
+    <string name="register_auth_resend" >重发(%1$d)</string>
+
+</resources>

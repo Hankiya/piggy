@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/lay_trust_up"
+		android:orientation="vertical" android:padding="@dimen/aty_horizontal_margin">
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout android:layout_width="0dp"
+				android:layout_height="match_parent" android:layout_weight="1"
+				android:orientation="vertical">
+
+				<TextView android:layout_width="match_parent"
+					android:layout_height="28dp" android:background="@drawable/xml_range_num_bk"
+					android:gravity="center" android:text="年化收益" android:textColor="#fff"
+					android:textSize="16sp" />
+
+				<TextView android:id="@+id/tv_increase"
+					android:layout_width="match_parent" android:layout_height="40dp"
+					android:background="#ddd" android:gravity="center"
+					android:textColor="#000" android:textSize="22sp" />
+			</LinearLayout>
+
+			<TextView android:id="@+id/tv_title" android:layout_width="0dp"
+				android:layout_height="wrap_content" android:minHeight="68dp"
+				android:layout_marginBottom="1dp" android:layout_marginLeft="12dp"
+				android:layout_weight="2.3145" android:lineSpacingExtra="12dp"
+				android:paddingBottom="2dp" android:textColor="#333"
+				android:textSize="18sp" />
+		</LinearLayout>
+
+		<com.howbuy.control.DashedLine
+			android:layout_width="match_parent" android:layout_height="1dp" />
+
+		<TextView android:id="@+id/tv_value" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="12dp"
+			android:lineSpacingExtra="12dp" android:textColor="#666"
+			android:textSize="16sp" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="34dp"
+		android:id="@+id/lay_trust_mid" android:orientation="vertical"
+		android:padding="@dimen/aty_horizontal_margin">
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="投资期限" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="投资起点" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="收益说明" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="34dp"
+		android:layout_marginBottom="34dp" android:id="@+id/lay_trust_bot"
+
+		android:orientation="vertical" android:padding="@dimen/aty_horizontal_margin">
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="发行机构" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value4" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="发行规模" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value5" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="投资方向" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value6" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="投资说明" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value7" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="8dp"
+			android:layout_marginTop="8dp" android:orientation="horizontal">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginRight="18dp"
+				android:minWidth="65dp" android:text="风控措施" android:textColor="#999"
+				android:textSize="16sp" />
+
+			<TextView android:id="@+id/tv_value8" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="#333"
+				android:textSize="16sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+ <string-array name="sdk_infs">
+     <item >通用数据接口-lib_illustrate_common.xml-com.howbuy.frag.FragListLib</item>
+     <item >交易数据接口-lib_illustrate_trade.xml-com.howbuy.frag.FragListLib</item>
+     <item >控件-control_illustrate.xml-com.howbuy.frag.FragListControl</item>
+     <item >更多-xml_menu_items.xml-com.howbuy.frag.FragListMore</item>
+ </string-array>
+ 
+    <string-array name="secret_list_key">
+        <item>k1</item>
+        <item>k2</item>
+        <item>k3</item>
+    </string-array>
+    <string-array name="secret_list_value">
+        <item>v1</item>
+        <item>v2</item>
+        <item>v3</item>
+    </string-array>
+</resources>

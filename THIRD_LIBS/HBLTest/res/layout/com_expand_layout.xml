@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.howbuy.lib.control.ExpandGroup
+            android:id="@+id/lay_expand_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onXmlBtClick"
+                    android:text="toggle" />
+
+                <Button
+                    android:id="@+id/bt_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onXmlBtClick"
+                    android:text="expand" />
+
+                <Button
+                    android:id="@+id/bt_unexpnad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onXmlBtClick"
+                    android:text="unexpand" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/expand_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewText" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_bt_clear_pressed" />
+        </com.howbuy.lib.control.ExpandGroup>
+
+        <com.howbuy.control.ExpandableLinearLayout
+            android:id="@+id/lay_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aa00ff00"
+            android:divider="@drawable/custom_tab_indicator_divider"
+            android:showDividers="middle" />
+    </LinearLayout>
+
+</ScrollView>

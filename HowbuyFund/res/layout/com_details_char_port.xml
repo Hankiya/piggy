@@ -1,0 +1,28 @@
+<com.howbuy.control.DetailsCharPagerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_char"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#fff"
+    android:paddingLeft="@dimen/details_margin_horizonal"
+    android:paddingRight="@dimen/details_margin_horizonal" >
+
+    <com.howbuy.control.PageFixedSlidingTabStrip
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="35dp" />
+
+    <com.howbuy.control.CanScrollViewPager
+        android:id="@+id/vp_char"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="35dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_char"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</com.howbuy.control.DetailsCharPagerLayout>

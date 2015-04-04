@@ -1,0 +1,9 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for xhdpi devices (e.g. 7" tablets) here.
+    -->
+	  <dimen name="call_padding_buttom">220dp</dimen>
+	  <dimen name="cicle_height">112dp</dimen>
+</resources>

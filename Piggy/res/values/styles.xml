@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@style/Theme.Piggy_light_dark_bar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/windowscolor</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+
+    <style name="AppBaseThemeIcon" parent="@style/Theme.Piggy_light_dark_bar">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppNoActionBarTheme" parent="@style/Theme.Sherlock.Light.NoActionBar"></style>
+
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/actionbar_bg</item>
+        <item name="displayOptions">showTitle|homeAsUp</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBarWithIcon" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/actionbar_bg</item>
+        <item name="displayOptions">showTitle|homeAsUp</item>
+    </style>
+
+
+    <!-- ChinaPay plugin begin -->
+        <style name="cp_Animation" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@style/cp_AnimationActivity</item>
+    </style>
+
+    <style name="cp_AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/cpay_push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/cpay_push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/cpay_slide_up_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/cpay_slide_down_out</item>
+    </style>
+     <style name="cpay_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+      
+    <!-- ChinaPay plugin end -->
+</resources>

@@ -1,0 +1,412 @@
+package howbuy.android.piggy.widget;
+
+import howbuy.android.piggy.R;
+import howbuy.android.util.Screen;
+import howbuy.android.util.StringUtil;
+
+import java.util.ArrayList;
+
+import android.R.string;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Paint;
+import android.graphics.Paint.FontMetrics;
+import android.graphics.Path;
+import android.graphics.PointF;
+import android.graphics.RectF;
+import android.graphics.Shader.TileMode;
+import android.graphics.drawable.ShapeDrawable;
+import android.util.AttributeSet;
+import android.util.SparseArray;
+import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.DecelerateInterpolator;
+
+import com.howbuy.interfaces.ICharData;
+import com.howbuy.lib.control.AbsView;
+import com.howbuy.lib.interfaces.IAnimChaged;
+
+/**
+ * 柱状图
+ * 
+ * @author yescpu
+ * 
+ */
+public class HtcChartView extends AbsView {
+	public static final float RecScaleX = 40f;
+	public static final float RecScaleY = -25f;
+	public static float CoorScale = 70;
+	public static final int AnimTime = 300;
+	public static final String bankText = "银行活期存款利率";
+	public static final String howbuyText = "七日年化收益率";
+
+	private int mZYNum;// y轴数量
+	private int mZXNum;// x轴数量
+	private int mDefaultHtcNum = 2;// 默认柱状图数量
+	private float mHtcWidth;// 柱状图的宽度
+	private Paint mHtcPot;// 柱状图画笔
+	private Paint mHtcPotLine;// 柱状图画笔边线
+	private Paint mHtcPotTop;// 柱状图画笔顶部
+	private Paint mHtcPotTop2;// 柱状图画笔顶部
+	private Paint mHtcPotPositive;// 柱状图画笔正面
+	private Paint mHtcPotPositive2;// 柱状图画笔正面2
+	private Paint mHtcPotRight;// 柱状图画笔右边
+	private Paint mHtcText1;// 柱状图画笔右边
+	private Paint mHtcText2;// 柱状图画笔右边
+	int textHight1;
+	int textHight2;
+
+	private Paint mAllPot;
+	private float mBitmapWidth;
+	private float mBitmapHeight;
+	private float mShapWidth;
+	private float mShapHeight;
+	private Bitmap mBitmap;
+	private Canvas mCanvas;
+	private float maxValue;
+	private float miniValue;
+	private float mRate = 0;
+	private ArrayList<ICharData> mData = null;
+	private ArrayList<ICharData> mCurrData = null;
+	private SparseArray<Float> mTempHights = new SparseArray<Float>();
+	private boolean isInit;
+	private Path mPath = new Path();
+	private ShapeDrawable shaper;
+	private Screen mScreen;
+
+	public HtcChartView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+		System.out.println("constact");
+		init();
+	}
+
+	private void init() {
+		mScreen = new Screen(getContext());
+		textHight1 = getResources().getDimensionPixelOffset(R.dimen.htcChart_fontSize1);
+		textHight2 = getResources().getDimensionPixelOffset(R.dimen.htcChart_fontSize2);
+		CoorScale = getResources().getDimensionPixelOffset(R.dimen.htcChart_Only_scale);
+		mAllPot = new Paint();
+		/* 去锯齿 */
+		mAllPot.setAntiAlias(true);
+		/* 设置paint的颜色 */
+		mAllPot.setColor(0xffff0000);
+		/* 设置paint的 style 为STROKE：空心 */
+		mAllPot.setStyle(Paint.Style.STROKE);
+		/* 设置paint的外框宽度 */
+		mAllPot.setStrokeWidth(3);
+		mHtcPot = new Paint();
+		mHtcPot.set(mAllPot);
+
+		Paint bP = new Paint();
+		bP.setAntiAlias(true);
+
+		mHtcPotLine = new Paint(bP);
+		mHtcPotLine.setColor(Color.WHITE);
+		mHtcPotLine.setStyle(Paint.Style.STROKE);
+
+		mHtcPotTop = new Paint(bP);
+		mHtcPotTop.setStyle(Paint.Style.FILL);
+		mHtcPotTop.setColor(Color.rgb(98,42,40));
+
+		mHtcPotTop2 = new Paint(bP);
+		mHtcPotTop2.setStyle(Paint.Style.FILL);
+		mHtcPotTop2.setColor(Color.rgb(93,130,149));
+
+		mHtcPotPositive = new Paint(bP);
+		mHtcPotPositive.setStyle(Paint.Style.FILL);
+		mHtcPotPositive.setColor(Color.rgb(141,52,46));
+
+		mHtcPotPositive2 = new Paint(bP);
+		mHtcPotPositive2.setStyle(Paint.Style.FILL);
+		mHtcPotPositive2.setColor(Color.rgb(103,158,179));
+
+		mHtcPotRight = new Paint(bP);
+		mHtcPotRight.setStyle(Paint.Style.FILL);
+//		mHtcPotRight.setShader(new LinearGradient(0, 0, 0, 1, Color.rgb(89, 38, 36), Color.rgb(89, 38, 36), TileMode.CLAMP));
+
+		mHtcText1 = new Paint(bP);
+		mHtcText1.setColor(Color.rgb(255, 255, 255));
+		mHtcText1.setTextSize(textHight1);
+
+		mHtcText2 = new Paint(bP);
+		mHtcText2.setColor(Color.rgb(255, 255, 255));
+		mHtcText2.setTextSize(textHight2);
+	}
+	
+	@Override
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		// TODO Auto-generated method stub
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+		int height=0;
+		if (mScreen.getWidth()>480) {
+			height= mScreen.getHeight()/2*1;
+		}else {
+			height= mScreen.getHeight()/3*1;
+		}
+		setMeasuredDimension(mScreen.getWidth(), height);
+	}
+
+	@Override
+	protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+		// TODO Auto-generated method stub
+		super.onSizeChanged(w, h, oldw, oldh);
+		if (w == 0 || h == 0) {
+			return;
+		}
+		mBitmapWidth = w;
+		mBitmapHeight = h;
+		mShapHeight = (mBitmapHeight - getPaddingTop() - getPaddingBottom()) * 3 / 5;
+		mShapWidth = mBitmapWidth - getPaddingRight() - getPaddingLeft();
+		mBitmap = Bitmap.createBitmap((int) mBitmapWidth, (int) mBitmapHeight, Config.ARGB_8888);
+		mCanvas = new Canvas(mBitmap);
+		mHtcWidth = mShapWidth / mDefaultHtcNum / 2.5f;
+		mTempHights = new SparseArray<Float>();
+		doDraw();
+	}
+
+	@Override
+	public void onDraw(Canvas canvas) {
+		// TODO Auto-generated method stub
+		super.onDraw(canvas);
+		// drawXAdData(canvas);
+		if (mCurrData != null) {
+			drawRectangle(canvas);
+		}
+	}
+
+	private void doDraw() {
+		if (isInit && mCanvas != null) {
+			// drawXAdData();
+			// drawRectangle();
+		}
+	}
+
+	private void drawRectangle(Canvas cvs) {
+		float xItemlth = (mShapWidth / (mDefaultHtcNum + 1));
+		for (int i = 0; i < mDefaultHtcNum; i++) {
+			float centerF = getPaddingLeft() + xItemlth * (i + 1);
+			if (i == 0) {
+				centerF -= CoorScale;
+			} else {
+				centerF += CoorScale;
+			}
+			float value = mCurrData.get(i).getValue(0);
+
+			float leftF = centerF - mHtcWidth / 3f;
+			float rightF = centerF + mHtcWidth / 3f;
+			float hightF = value * mShapHeight / maxValue+textHight1;
+
+			if (mTempHights.get(i) == null) {
+				mTempHights.put(i, 0f);
+			}
+
+			float a = hightF * mRate;
+			RectF rectF = new RectF(leftF, mBitmapHeight - getPaddingBottom() - a, rightF, mBitmapHeight - getPaddingBottom()-textHight1);
+//			if (i==0) {
+////				rectF.inset(15f, 0f);
+//			}
+			if (i == 0) {
+				cvs.drawRect(rectF, mHtcPotPositive);
+			} else {
+				cvs.drawRect(rectF, mHtcPotPositive2);
+			}
+			rectangleTo3d(rectF, cvs, i);
+			mTempHights.put(i, a);
+
+			// drawText
+
+			String valueString = StringUtil.formatBaiFen(Float.toString(value)) + "%";
+//			int font2Hight = getFontHeight(textHight2);
+			int funt2Line = 10;
+//			float y1 = mBitmapHeight - getPaddingBottom() - a - font2Hight - funt2Line + RecScaleY;
+			float topTextStartX=getTextStart(rectF.left, rectF.width()+rectF.left, mHtcText2, valueString)+12;
+			cvs.drawText(valueString, topTextStartX, mBitmapHeight - getPaddingBottom() - a  + RecScaleY, mHtcText2);
+			
+			String text=i == 0 ? howbuyText : bankText;
+			float buttomTextStartX=getTextStart(rectF.left, rectF.width()+rectF.left, mHtcText1, text)+12;
+			cvs.drawText(text, buttomTextStartX , mBitmapHeight-funt2Line, mHtcText1);
+		}
+	}
+
+	public int getFontHeight(float fontSize) {
+		Paint paint = new Paint();
+		paint.setTextSize(fontSize);
+		FontMetrics fm = paint.getFontMetrics();
+		return (int) Math.ceil(fm.descent - fm.top) + 2;
+	}
+
+	/**
+	 * transform 3d rectangle
+	 * 
+	 * @param rectF
+	 */
+	private void rectangleTo3d(RectF rectF, Canvas cvs, int index) {
+		RectF rectFOffset = new RectF(rectF);
+		rectFOffset.offset(15, -10);
+		PointF top1 = new PointF(rectF.left, rectF.top);
+		PointF top2 = new PointF(rectFOffset.left, rectFOffset.top);
+		PointF top3 = new PointF(rectFOffset.width() + rectFOffset.left, rectFOffset.top);
+		PointF top4 = new PointF(rectFOffset.width() + rectF.left, rectF.top);
+
+		// PointF btm1 = new PointF(rectF.left, rectF.top + rectF.height());
+		PointF btm2 = new PointF(rectFOffset.left + rectFOffset.width(), rectFOffset.top + rectFOffset.height());
+		PointF btm3 = new PointF(rectF.left + rectF.width(), rectF.top + rectF.height());
+
+		mPath.reset();
+		mPath.moveTo(top1.x, top1.y);
+		mPath.lineTo(top2.x, top2.y);
+		mPath.lineTo(top3.x, top3.y);
+		mPath.lineTo(top4.x, top4.y);
+		mPath.close();
+		if (index == 0) {
+			cvs.drawPath(mPath, mHtcPotTop);
+		} else {
+			cvs.drawPath(mPath, mHtcPotTop2);
+		}
+
+		mPath.reset();
+		mPath.moveTo(top4.x, top4.y);
+		mPath.lineTo(top3.x, top3.y);
+		mPath.lineTo(btm2.x, btm2.y);
+		mPath.lineTo(btm3.x, btm3.y);
+		mPath.close();
+		if (index == 0) {
+			cvs.drawPath(mPath, mHtcPotTop);
+		} else {
+			cvs.drawPath(mPath, mHtcPotTop2);
+		}
+//
+//		mPath.reset();
+//		mPath.moveTo(top1.x, top1.y);
+//		mPath.lineTo(top4.x, top4.y);
+//		mPath.lineTo(top3.x, top3.y);
+//		cvs.drawPath(mPath, mHtcPotLine);
+//
+//		mPath.reset();
+//		mPath.moveTo(top4.x, top4.y);
+//		mPath.lineTo(btm3.x, btm3.y);
+//		cvs.drawPath(mPath, mHtcPotLine);
+
+	}
+
+	private void drawXAdData(Canvas cvs) {
+		cvs.drawLine(0, mBitmapHeight - getPaddingBottom(), mBitmapWidth, mBitmapHeight - getPaddingBottom(), mAllPot);
+	}
+
+	private void getMaxAndMinFund(ArrayList<ICharData> listDatas) {
+		float mini = 0f, max = 0f;
+		for (int i = 0; i < listDatas.size(); i++) {
+			float v = listDatas.get(i).getValue(i);
+			if (v < mini) {
+				mini = v;
+			}
+			if (v > max) {
+				max = v;
+			}
+		}
+		miniValue = mini;
+		maxValue = max;
+	}
+
+	/**
+	 * 冒泡排序
+	 * 
+	 * @param f
+	 * @return
+	 */
+	private float[] sort(float[] f) {
+		float temp;
+		for (int i = 0; i < f.length; i++) {
+			for (int j = i + 1; j < f.length; j++) {
+				if (f[i] > f[j]) {
+					temp = f[i];
+					f[i] = f[j];
+					f[j] = temp;
+				}
+			}
+		}
+		return f;
+	}
+
+	public void setData(ArrayList<ICharData> generateDefData) {
+		// TODO Auto-generated method stub
+		// mData = generateDefData;
+		mData = generateDefData;
+		mCurrData = mData;
+		getMaxAndMinFund(mCurrData);
+		// mDefaultHtcNum =mCurrData.size();
+		isInit = true;
+		invalidate();
+	}
+
+	@Override
+	protected void onDetachedFromWindow() {
+		// TODO Auto-generated method stub
+		super.onDetachedFromWindow();
+
+	}
+
+	@Override
+	protected void onAttachedToWindow() {
+		// TODO Auto-generated method stub
+		super.onAttachedToWindow();
+		if (isInit) {
+			doDraw();
+		}
+	}
+
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void onAnimChaged(View nullView, int type, int which, float val, float dval) {
+		// TODO Auto-generated method stub
+		super.onAnimChaged(nullView, type, which, val, dval);
+		switch (type) {
+		case IAnimChaged.TYPE_START:
+			mRate = -1;
+			break;
+		case IAnimChaged.TYPE_CHANGED:
+			mRate = val;
+			invalidate();
+			break;
+		case IAnimChaged.TYPE_END:
+			mRate = 1;
+			break;
+		default:
+			break;
+		}
+	}
+
+	@Override
+	public boolean onViewFirstSteped(int w, int h) {
+		setInterpolator(new AccelerateDecelerateInterpolator());
+		startAnim(1, 1000, 10, true,false);
+		return false;
+	}
+
+	@Override
+	protected void onFrameSizeChanged(boolean fromUser) {
+		// TODO Auto-generated method stub
+	}
+	
+	private float getTextStart(float xStart,float xEnd,Paint textPaint,String text){
+		float textLength= textPaint.measureText(text);
+		float xBaseLength=  xEnd-xStart;
+		float jian=textLength-xBaseLength;
+		if (jian>0) {
+			float more= textLength/2f-xBaseLength/2f;
+			return xStart-more;
+		}else {
+			float more= xBaseLength/2f-textLength/2f;
+			return xStart+more;
+		}
+	}
+}

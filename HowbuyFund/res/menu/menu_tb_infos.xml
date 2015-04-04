@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_more"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_overflow"
+        android:title="more">
+        <menu>
+            <item
+                android:id="@+id/menu_collect"
+                android:title="@string/menu_text_collect"/>
+            <item
+                android:id="@+id/menu_setting"
+                android:title="@string/menu_text_setting"/>
+            <item
+                android:id="@+id/menu_about"
+                android:title="@string/menu_text_about"/>
+        </menu>
+    </item>
+
+</menu>

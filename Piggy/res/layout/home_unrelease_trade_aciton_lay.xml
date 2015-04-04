@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ac_menu_lay"
+    android:layout_width="54dp"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selectable_background_piggy"
+    android:clickable="true" >
+
+    <!-- 为了兼容小米机器 嵌套了两层 -->
+
+    <RelativeLayout
+        android:layout_width="54dp"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/un_action_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/windowscolor"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@drawable/sheshi" />
+    </RelativeLayout>
+
+</LinearLayout>

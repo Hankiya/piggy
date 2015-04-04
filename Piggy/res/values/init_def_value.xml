@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <bool name="SECRET_DEBUG_URL">true</bool>
+    <bool name="SECRET_DEBUG_ENCRYPT">true</bool>
+    <bool name="SECRET_DEBUG_LOG">true</bool>
+    <bool name="SECRET_DEBUG_POP">false</bool>
+    <bool name="SECRET_DEBUG_LOG_FILE">false</bool>
+    <bool name="SECRET_DEBUG_CRASH_DIALOG">false</bool>
+    <bool name="SECRET_DEBUG_CRASH_LAUNCH">false</bool>
+    <bool name="SECRET_DEBUG_CRASH_MUTIFILE">false</bool>
+    <bool name="SECRET_DEBUG">false</bool>
+    <bool name="SET_PUSH">true</bool>
+    
+    <string name="UMENG_APPKEY">531568e256240b3448018ff2</string>
+    <string name="JPUSH_APPKEY">7b946d097f12ba9308cfbc76</string>
+    <string name="UMENG_CHANNEL">腾讯_活动</string>
+    <string name="channeId">119342200</string>
+    <string name="TransactionCoopId">A20140304</string>
+    <string name="TransactionActionId">HD0001</string>
+</resources>

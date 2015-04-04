@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res/howbuy.android.palmfund"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/list"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0"
+        tools:hasStickyHeaders="true"
+        android:visibility="visible"
+        android:cacheColorHint="#00000000"
+        tools:isDrawingListUnderStickyHeader="true"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <LinearLayout
+        android:id="@+id/nodata_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+         <TextView
+             android:id="@+id/no_rt_tips"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginBottom="70dp"
+             android:layout_marginTop="70dp"
+             android:gravity="center_horizontal"
+             android:text="@string/search_no_result_gm"
+             android:textColor="@color/text_tips" />
+
+        <LinearLayout
+            android:id="@+id/nodata_other_click"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+          	<com.howbuy.control.CheckHeadText
+          	    android:id="@+id/other_tips"
+          	    android:layout_width="fill_parent"
+          	    android:layout_height="wrap_content"
+          	    android:background="#f2f2f2"
+          	    android:gravity="left"
+          	    android:paddingBottom="2dp"
+          	    android:paddingTop="2dp"
+          	    android:text="@string/search_else_product"
+          	    android:textColor="@color/text_title"
+          	    android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:id="@+id/other_tips_title"
+                android:paddingTop="5dp"
+                android:text="@string/search_else_product_gm"
+                android:textColor="@color/text_title"
+                android:textSize="16sp" />
+            <TextView
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_tips_content"
+                android:text="@string/sync_tips"
+                android:textColor="@color/text_tips"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

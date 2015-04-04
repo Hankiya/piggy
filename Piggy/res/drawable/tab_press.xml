@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+      <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/tab_press_or_line" />
+            <!-- <corners android:radius="10dp" /> -->
+            <padding android:bottom="1dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle" >
+            <!-- <corners android:radius="10dp" /> -->
+            <solid android:color="@color/tab_select" />
+        </shape>
+    </item>
+  
+
+</layer-list>

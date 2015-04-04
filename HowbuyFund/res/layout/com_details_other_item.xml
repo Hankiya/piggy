@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="42dp"
+	android:layout_marginTop="1dp" android:background="@drawable/xml_home_item_sector"
+	android:gravity="center_vertical" android:onClick="onXmlBtClick"
+	android:orientation="horizontal" android:paddingLeft="@dimen/details_margin_horizonal"
+	android:paddingRight="@dimen/details_margin_horizonal">
+	<TextView android:id="@+id/tv_title" android:layout_height="wrap_content"
+		android:layout_width="0dp" android:layout_weight="2"
+		android:textColor="#333" android:textSize="16sp" />
+
+	<TextView android:id="@+id/tv_state" android:layout_height="wrap_content"
+		android:layout_width="0dp" android:layout_weight="3"
+		android:gravity="right"
+		android:singleLine="true" android:ellipsize="end" android:textColor="#999"
+		android:textSize="16sp" />
+</LinearLayout>

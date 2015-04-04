@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.howbuy.control.VerticalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/aty_set_horizontal_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_about_content_title1"
+            android:textColor="#333"
+            android:id="@+id/tv_debug"
+            android:clickable="true"
+            android:onClick="onXmlBtClick"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title1_sumary1"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title1_sumary2"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title1_sumary3"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+        <!--  -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/set_about_content_title2"
+            android:textColor="#333"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title2_sumary1"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title2_sumary2"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title2_sumary3"
+            android:textColor="#666"
+            android:textSize="18sp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title2_sumary4"
+            android:textColor="#666"
+            android:textSize="18sp" />
+        <!--  -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/set_about_content_title3"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title3_sumary1"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title3_sumary2"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/set_about_title3_sumary3"
+            android:textColor="#666"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/lay_server"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:onClick="onXmlBtClick"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_tel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_about_text_server_des"
+                android:textColor="#333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_about_text_server_tel"
+                android:textColor="@color/text_increase"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_head_bk" />
+
+        <LinearLayout
+            android:id="@+id/lay_rate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:onClick="onXmlBtClick"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_grade" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_about_text_rate"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.howbuy.control.VerticalScrollView>

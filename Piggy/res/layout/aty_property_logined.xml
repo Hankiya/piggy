@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/activity_property_logined">
+
+	<ScrollView android:layout_above="@+id/btm_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal">
+				<include layout="@layout/lay_ad" android:visibility="gone"/>
+				<View android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="166dp" android:orientation="vertical" android:background="@color/highlight">
+					<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="5sp" android:paddingBottom="5sp">
+					    <LinearLayout android:layout_centerVertical="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+					        <ImageView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_jz"/>
+							<TextView android:paddingTop="2dp" android:includeFontPadding="false" android:layout_marginLeft="4dp" android:textColor="#e6e6e6" android:gravity="bottom" android:text="最新收益" android:id="@+id/income_new_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/py_top_title"/>
+					    </LinearLayout>
+						<ImageView android:id="@+id/income_new_share" android:layout_width="wrap_content" android:layout_marginRight="14sp" android:layout_height="wrap_content" android:src="@drawable/ic_fx" android:contentDescription="@string/todo" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+					</RelativeLayout>
+					<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin">
+						<TextView android:paddingBottom="16dp" android:id="@+id/income_new" android:textScaleX="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textSize="45sp" android:layout_centerInParent="true" android:textColor="#ffffff"/>
+						<ImageView android:paddingBottom="12dp" android:id="@+id/income_new_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_jt" android:contentDescription="@string/todo" android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+					</RelativeLayout>
+				</LinearLayout>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#ff984d"/>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#c76200"/>
+				<LinearLayout android:background="@color/highlight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:paddingTop="10dp" android:paddingBottom="10dp">
+			    <!-- android:onClick="jumpToModifyToken"  -->
+			    <!-- android:onClick="jumpToIncome"  -->
+			    <!-- android:onClick="jumpToModifyToken" -->
+					<LinearLayout android:paddingTop="5dp" android:layout_weight="1.18" android:layout_width="0dp" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_height="wrap_content" android:orientation="vertical">
+						<TextView android:id="@+id/property_all_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/totalAssets" android:textColor="#e6e6e6" android:textSize="14sp"/>
+						<TextView android:id="@+id/property_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:text="0.00" android:textColor="@color/text_home_topincome" android:textSize="22sp" android:layout_marginTop="3dp"/>
+					</LinearLayout>
+					<RelativeLayout android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content">
+						<View android:layout_alignLeft="@+id/left" android:layout_width="2px" android:layout_centerHorizontal="true" android:layout_height="50dp" android:orientation="vertical" android:background="#c76200" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+						<View android:layout_alignLeft="@+id/left" android:layout_width="1px" android:layout_centerHorizontal="true" android:layout_height="50dp" android:orientation="vertical" android:background="#ff984d" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+						<LinearLayout android:paddingLeft="10dp" android:paddingTop="5dp" android:id="@+id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:orientation="vertical">
+							<TextView android:id="@+id/income_all_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AllIncome" android:textColor="#e6e6e6" android:textSize="14sp"/>
+							<TextView android:id="@+id/income_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textColor="@color/text_home_topincome" android:textSize="22sp" android:layout_marginTop="3dp"/>
+						</LinearLayout>
+					</RelativeLayout>
+				</LinearLayout>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9"/>
+				<LinearLayout android:layout_width="fill_parent" android:background="@android:color/white" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:paddingTop="10dp" android:paddingBottom="10dp">
+					<LinearLayout android:paddingTop="5dp" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_weight="1.18" android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical">
+						<TextView android:id="@+id/qrnh_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#999" android:textSize="14sp"/>
+						<TextView android:id="@+id/qrnh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:text="0.00" android:textColor="@color/highlight" android:textSize="22sp" android:layout_marginTop="3dp"/>
+					</LinearLayout>
+					<RelativeLayout android:layout_weight="1.0" android:layout_width="0dp" android:layout_height="wrap_content">
+						<View android:layout_alignLeft="@+id/left1" android:layout_width="1px" android:layout_centerHorizontal="true" android:layout_height="50dp" android:orientation="vertical" android:background="#d9d9d9" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+						<LinearLayout android:paddingLeft="10dp" android:paddingTop="5dp" android:id="@+id/left1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:orientation="vertical">
+
+							<TextView android:id="@+id/wfsy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#999" android:textSize="14sp"/>
+							<TextView android:id="@+id/wfsy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:textColor="@color/highlight" android:textSize="22sp" android:layout_marginTop="3dp"/>
+						</LinearLayout>
+					</RelativeLayout>
+				</LinearLayout>
+
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@android:color/white">
+					<RelativeLayout android:id="@+id/query_lay" android:layout_width="fill_parent" android:layout_height="65dp" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:background="@drawable/py_item_bg" android:clickable="true">
+						<LinearLayout android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+							<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cqmx"/>
+							<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingLeft="10dp" android:gravity="center_vertical" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+								<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存取款明细" android:textSize="18sp" android:textColor="#4d4d4d"/>
+								<TextView android:id="@+id/query_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:textColor="#999999"/>
+							</LinearLayout>
+						</LinearLayout>
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:src="@drawable/ic_jt_one"/>
+					</RelativeLayout>
+					<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9"/>
+					<RelativeLayout android:id="@+id/events_lay" android:layout_width="fill_parent" android:layout_height="65dp" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:background="@drawable/py_item_bg" android:clickable="true">
+						<LinearLayout android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+							<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_jf"/>
+							<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+								<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动专区" android:textSize="18sp" android:textColor="#4d4d4d"/>
+								<TextView android:id="@+id/events_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送积分好礼活动即将上线" android:textSize="14sp" android:textColor="#999999"/>
+							</LinearLayout>
+						</LinearLayout>
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:src="@drawable/ic_jt_one"/>
+					</RelativeLayout>
+					<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#d9d9d9"/>
+				</LinearLayout>
+			</LinearLayout>
+			<include layout="@layout/lay_notify"/>
+		</FrameLayout>
+	</ScrollView>
+
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/btm_lay" android:layout_alignParentBottom="true" android:orientation="vertical">
+		<View android:layout_width="match_parent" android:layout_height="1px" android:background="#d9d9d9"/>
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+			<howbuy.android.piggy.widget.ImageTextBtn style="@style/piggy_text_button" android:textColor="@color/btntext_py_register" android:layout_width="0dip" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_weight="1" android:id="@+id/outmoneybtn" android:clickable="true" android:background="@drawable/btn_register_noround_bg" android:text="@string/Withdrawals"/>
+			<View android:layout_width="1dp" android:layout_height="48dp" android:background="#d9d9d9"/>
+			<howbuy.android.piggy.widget.ImageTextBtn android:background="@drawable/btn_sure_noround_bg" android:textColor="@color/btntext_py_nomal" android:id="@+id/savemoneybtn" style="@style/piggy_text_button" android:layout_width="0dip" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_weight="1" android:clickable="true" android:text="@string/SaveMoney"/>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

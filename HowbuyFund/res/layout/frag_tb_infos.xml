@@ -1,0 +1,19 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.howbuy.control.PagerSlidingTabStrip
+        android:id="@+id/indicator"
+        android:layout_height="@dimen/tab_height"
+        android:layout_width="fill_parent"
+        android:background="@drawable/background_tabs"
+    />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

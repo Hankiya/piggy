@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin_os7_top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/noaccount_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/account_info_lay"
+                    style="@style/piggy_setting_lay"
+                    android:background="@drawable/setting_top_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/nihao" />
+
+                    <TextView
+                        android:id="@+id/account_info_title"
+                        style="@style/piggy_settitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/icon1"
+                        android:text="@string/notlogin" />
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_action_next_item" />
+
+                    <TextView
+                        android:id="@+id/account_info_hint"
+                        style="@style/piggy_settitle_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/arrow1"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/account_manage_lay"
+                    style="@style/piggy_setting_lay"
+                                        android:background="@drawable/setting_item_bg"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true" >
+
+                    <!-- android:background="@drawable/setting_item_bg" -->
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhgl" />
+
+                    <TextView
+                        style="@style/piggy_settitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/icon"
+                        android:text="@string/accountmanage" />
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_action_next_item" />
+
+                    <TextView
+                        style="@style/piggy_settitle_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/arrow"
+                        android:paddingLeft="5dp"
+                        android:text="@string/login"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+               
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/bankall_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+                                                                        android:background="@drawable/setting_buttom_bg"
+                android:id="@+id/bank_lay"
+                style="@style/piggy_setting_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mrxe" />
+
+                <TextView
+                    android:id="@+id/bank_title"
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/nothaveBank" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    android:id="@+id/bank_hint"
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/band" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                                                                        android:background="@drawable/setting_top_bg"
+                android:id="@+id/help_lay"
+                style="@style/piggy_setting_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/help" />
+
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/help" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/login"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/about_lay"
+                style="@style/piggy_setting_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:background="@drawable/setting_buttom_bg"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/about" />
+
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/about" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/usernamehint"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

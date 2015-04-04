@@ -1,0 +1,172 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="piggy"></style>
+    
+
+    <style name="piggy_shadow_text" parent="@style/piggy">
+
+        <!-- 阴影颜色 -->
+        <item name="android:shadowColor">@color/textshadow</item>
+        <!-- 阴影x方向位移 -->
+        <item name="android:shadowDx">0</item>
+        <!-- 阴影y方向位移 -->
+        <item name="android:shadowDy">3</item>
+        <!-- 阴影的半径 -->
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="piggy_intput" parent="@style/piggy">
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/text_input</item>
+        <item name="android:textColorHint">@color/text_input_hint</item>
+    </style>
+
+    <style name="piggy_intput_lefttext" parent="@style/piggy">
+        <item name="android:textColor">@color/text_input_title</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="piggy_settitle" parent="@style/piggy">
+        <item name="android:textColor">@color/text_setting_title</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">14dp</item>
+    </style>
+
+    <style name="piggy_settitle_hint" parent="@style/piggy">
+        <item name="android:textColor">@color/text_setting_title_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="piggy_settitle_hint_yellow" parent="@style/piggy_settitle_hint">
+        <item name="android:textColor">@color/text_setting_title_yellow</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="piggy_text_link" parent="@style/piggy">
+        <item name="android:textColor">@color/text_link</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="piggy_input_lay" parent="@style/piggy">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/setting_item_bg</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/os7_item_spirt</item>
+    </style>
+
+    <style name="piggy_setting_lay" parent="@style/piggy">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/setting_item_bg</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="piggy_spinnertitle" parent="@style/piggy">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/text_input</item>
+    </style>
+
+    <style name="piggy_text_button" parent="@style/piggy">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/btntext</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="PageTitle_text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">5dip</item>
+    </style>
+
+    <style name="PagerTitleStrip">
+        <item name="android:background">@drawable/tabstrip_bg</item>
+        <item name="android:textAppearance">@style/PageTitle_text</item>
+    </style>
+
+    <style name="item_title">
+        <item name="android:textColor">#979797</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="piggy_checkBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+    <style name="piggy_progressbar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+ <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+ <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+ <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+ <!-- 无标题 -->
+        <!-- <item name="android:windowBackground">@color/transparent</item>背景透明   去掉背景色边框也就去掉了 -->
+        <item name="android:backgroundDimEnabled">false</item>
+ <!-- 模糊 -->
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+
+        <!-- <item name="android:background">@drawable/tab_indicator_ab_piggy_light_dark_bar</item> -->
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/tabtext</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+     <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    
+    <style name="unlgn_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    <style name="unlgn_title_scd">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_title_secound</item>
+    </style>
+    <style name="py_top_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_home_hint_title</item>
+    </style>
+    <style name="py_top_title_scd">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_title_secound</item>
+    </style>
+    
+	  <style name="dialog" parent="@android:style/Theme.Dialog">
+         <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#9933CC</item>
+        <item name="android:windowBackground">@drawable/ab_solid_piggy</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+</resources>

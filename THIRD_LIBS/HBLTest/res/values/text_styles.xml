@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="tv_normal" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tv_title" parent="tv_normal">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tv_title_large" parent="tv_title">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="tv_select_normal" parent="tv_normal">
+         <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@drawable/xml_text_color_blue</item>
+    </style>
+
+    <style name="tv_select_title" parent="tv_title">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@drawable/xml_text_color_blue</item>
+    </style>
+
+    <style name="bt_normal" parent="tv_title">
+        <item name="android:background">@android:drawable/btn_default_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+         <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:onClick">onXmlBtClick</item>
+        <item name="android:textColor">@drawable/xml_text_color_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bt_normal_weight" parent="bt_normal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+</resources>

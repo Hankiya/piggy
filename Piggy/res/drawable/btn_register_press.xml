@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/btn_register_press" />
+            <!-- <corners android:radius="10dp" /> -->
+            <corners android:radius="@dimen/btn_bg_round"/>
+        </shape>
+    </item>
+  
+
+</layer-list>

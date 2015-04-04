@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin_os7_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/gesture_open_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_one_bg"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ssmm" />
+
+                <TextView
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/gesture" />
+
+                <CheckBox
+                     style="@style/piggy_checkBox"
+                    android:id="@+id/flagpattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+            <RelativeLayout
+            android:layout_marginTop="15dp"
+                android:id="@+id/mod_gesture_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_top_bg"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                        android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ssmm" />
+
+                <TextView
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/modifygesture" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    android:id="@+id/account_info_hint"
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/login"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mod_loginpwd_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                        android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/zhgl" />
+
+                <TextView
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/modifyloginpwd" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/login"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mod_tradepwd_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_bg"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                        android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/jycx" />
+
+                <TextView
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/modifytradepwd" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    android:id="@+id/trade_manage_hint"
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/login"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mod_phone_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_buttom_bg"
+                android:baselineAligned="true"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                      android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/changephone" />
+
+                <TextView
+                    style="@style/piggy_settitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon"
+                    android:text="@string/modifyphone" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_action_next_item" />
+
+                <TextView
+                    android:id="@+id/deposit_lay_hint"
+                    style="@style/piggy_settitle_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/arrow"
+                    android:paddingLeft="5dp"
+                    android:text="@string/login"
+                    android:visibility="gone" />
+            </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

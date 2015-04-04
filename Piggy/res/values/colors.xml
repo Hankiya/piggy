@@ -1,0 +1,101 @@
+<resources>
+   
+
+    <color name="windowscolor">#EEEEEE</color>
+    <color name="actioncolor">#AF0914</color>
+    
+    <color name="textblack">#353535</color>
+    <color name="text_home_hint_title">#FAB9BE</color>
+    <color name="text_home_topincome">#FAFFFD</color>
+    <color name="text_input_title">#666666</color>
+    <color name="text_input">#333333</color>
+    <color name="text_input_hint">#CCCCCC</color>
+    <color name="text_setting_title">#333333</color>
+    <color name="text_setting_title_yellow">#FD9426</color>
+    <color name="text_setting_title_gray">#989898</color>
+    <color name="text_link">#656565</color>
+    <color name="text_page">#333333</color>
+    <color name="text_title">#333333</color>
+    <color name="text_title_secound">#666666</color>
+    <color name="text_page_gray">#999999</color>
+    <color name="text_list_fenghong">#AC0B17</color>
+    
+    <color name="btn_sure_normal">#FC9825</color>
+    <color name="btn_sure_unenable">#F5D4A3</color>
+    <color name="btn_sure_press">#999999</color>
+    <color name="btn_register_normal">#2C90B5</color>
+    <color name="btn_register_unenable">#AECFDC</color>
+    <color name="btn_register_press">#999999</color>
+    
+    <color name="bg_lay_indicator_line">#DFDFDF</color>
+    <color name="bg_lay_defuault">#F7F7F7</color>
+    <color name="bg_lay_press">#DFDFDF</color>
+    <color name="bg_action_number">#FA0018</color>
+    <color name="bg_lock_bg_top">#FEBF35</color>
+    <color name="bg_lock_bg_buttom">#FD8B29</color>
+    
+    <color name="tab_nomal">#ffffff</color>
+    <color name="tab_select">#EEEEEE</color>
+    <color name="tab_press_or_line">#E0E0E0</color>
+    
+    
+    <color name="draw_lock_bg_top">#FF9900</color>
+    <color name="draw_lock_bg_buttom">#FF4400</color>
+    
+    
+    <color name="pie_bottom_arc">#CECECE</color>
+    <color name="pie_centertext_1">#FF9900</color>
+    <color name="pie_centertext_2">#CECECE</color>
+    <color name="pie_buttomtext_1">#999999</color>
+    <color name="pie_buttomtext_2">#CECECE</color>
+    
+    <color name="text_action_menu">#FC0019</color>
+    
+    <color name="setlockbg">#FC9825</color>
+    <color name="setlockpath">#FE9901</color>
+    <color name="setlockhint">#666666</color>
+    <color name="verfctpnusername">#FB8A02</color>
+    <color name="clickcolor">#999999</color>
+    <color name="blue">#999999</color>
+    
+    <color name="property">#FFF100</color>
+    <color name="propertysecound">#FFF799</color>
+    <color name="propertyline">#30FFF799</color>
+    <color name="propertyhbgstart">#70F5F5F5</color>
+    <color name="propertyhbgend">#90262626</color>
+    <!-- text阴影 -->
+    <color name="textshadow">#70050605</color>
+    <!-- 设置按下 -->
+    <color name="setpress">#d1cfcd</color>
+    <!-- 设置不可用 -->
+    <color name="setunable">#bcbab8</color>
+    <!-- 未处理气泡 -->
+    <color name="unTradeHint">#81511C</color>
+    <color name="unTradeBg">#FAF8E3</color>
+    <color name="unTradeNumber">#FF0000</color>
+    <!-- 数字颜色1 -->
+    <color name="number1">#FFF799</color>
+    
+    <color name="deepred">#7A000B</color>
+    
+    <!-- 两个按钮的主颜色 -->
+    <color name="surebtn_start">#FFB058</color>
+    <color name="surebtn_end">#FF6701</color>
+    <color name="shouyi_btn">#E80913</color>
+    <color name="registerbtn_start">#46B4DF</color>
+    <color name="registerbtn_end">#2791BA</color>
+    
+    <color name="hint">#959595</color>
+    <color name="hotred">#CA0011</color>
+    
+	<!-- Chinapay plugin begin -->
+	<color name="cp_light_white">#ffffff</color>
+	<color name="cp_red">#FF0000</color>
+	<!-- Chinapay plugin end -->
+	<!-- only v3 add -->
+	<color name="highlight">#FF6c00</color>
+	<color name="highlight_unlogin">#F96C57</color>
+	<color name="property_title">#c6c6c6</color>
+	
+	
+</resources>

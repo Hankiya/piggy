@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_bg"
+            android:baselineAligned="true"
+             android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/username"
+                style="@style/piggy_intput_lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/phone1" />
+
+            <howbuy.android.piggy.widget.ClearableEdittext
+                android:id="@+id/phone"
+                style="@style/piggy_intput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/username"
+                android:layout_marginLeft="13dip"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/phonehint"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        style="@style/piggy_input_lay"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/piggy_intput_lefttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/verification2" />
+
+        <howbuy.android.piggy.widget.ClearableEdittext
+            android:id="@+id/verification"
+            style="@style/piggy_intput"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="13dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/verificationhint"
+            android:inputType="textEmailAddress" />
+
+        <howbuy.android.piggy.widget.CountDownButton
+            android:layout_weight="1.2"
+            android:id="@+id/accessmsver"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="0dp"
+            android:textColor="@color/btntext"
+            android:textSize="16sp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ver_bg"
+            android:inputType="number"
+            android:layout_marginRight="5dp"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+</LinearLayout>

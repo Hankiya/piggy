@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleChartView">
+        <attr name="curve_shape_color_start" format="color" />
+        <attr name="curve_shape_color_end" format="color" />
+        <attr name="curve_color" format="color" />
+        <attr name="coord_color" format="color" />
+        <attr name="coord_text_color" format="color" />
+        <attr name="coord_text_size" format="dimension" />
+        <attr name="coord_row" format="integer" />
+        <attr name="coord_col" format="integer" />
+        <attr name="coord_arrow_size" format="dimension" />
+        <attr name="coord_min_weight" format="float" />
+        <attr name="coord_max_weight" format="float" />
+        <attr name="grid_color" format="color" />
+        <attr name="enable_grid" format="boolean" />
+        <attr name="enable_grid_dash" format="boolean" />
+        <attr name="emum_mode">
+            <enum name="emum_one" value="0" />
+            <enum name="emum_two" value="1" />
+            <enum name="emum_three" value="2" />
+        </attr>
+    </declare-styleable>
+ 
+</resources>

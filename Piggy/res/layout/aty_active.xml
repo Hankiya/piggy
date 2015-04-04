@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin_os7_top"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/bank_lay"
+                style="@style/piggy_input_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/lefttext"
+                    style="@style/piggy_intput_lefttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/usernamehint" />
+
+                <TextView
+                    android:id="@+id/idNo"
+                    style="@style/piggy_spinnertitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lefttext"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:text="430523198804204198" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bank_lay"
+                style="@style/piggy_input_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:baselineAligned="true"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/lefttext"
+                    style="@style/piggy_intput_lefttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="手机号码" />
+
+                <Button
+                    android:id="@+id/select_mobile"
+                    android:background="@null"
+                    style="@style/piggy_spinnertitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/lefttext"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_action_expand"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/selectmobile" />
+            </RelativeLayout>
+            <!-- android:drawableRight="@drawable/ic_action_expand" -->
+
+            <LinearLayout
+                style="@style/piggy_input_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/piggy_intput_lefttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/verification" />
+
+                <howbuy.android.piggy.widget.ClearableEdittext
+                    android:id="@+id/verification"
+                    style="@style/piggy_intput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/verificationhint"
+                    android:inputType="textEmailAddress" />
+
+                <howbuy.android.piggy.widget.CountDownButton
+                    android:id="@+id/accessmsver"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/btntext"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/ver_bg"
+                    android:inputType="number"
+                    android:text="获取验证码"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <howbuy.android.piggy.widget.ImageTextBtn
+                android:id="@+id/submit_btn"
+                style="@style/piggy_text_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_sure_bg"
+                android:text="@string/next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar"></style>
+
+    <style name="theme_fund.Widget.Sherlock.Light.ActionBar.Solid.Inverse" parent="@style/Widget.Sherlock.Light.ActionBar">
+
+        <!-- <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item> -->
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse</item>
+        <item name="android:subtitleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse</item>
+    </style>
+
+    <style name="theme_fund.SearchAutoCompleteTextView" parent="@style/Widget.Sherlock.Light.SearchAutoCompleteTextView">
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#e57f7f</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="theme_fund.ActionMode" parent="@android:style/Widget.Holo.Light.ActionMode.Inverse">
+    </style>
+
+</resources>

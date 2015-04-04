@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_success"
+        android:showAsAction="always|withText"
+        android:title="@string/action_success"/>
+
+</menu>

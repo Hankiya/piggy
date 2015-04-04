@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/details_company_margin_horizonal"
+        android:paddingRight="@dimen/details_company_margin_horizonal" >
+
+        <ImageView
+            android:id="@+id/iv_company_logo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:maxHeight="52dp"
+            android:maxWidth="52dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            style="@style/tv_normal"
+            android:layout_width="match_parent"
+            android:text="公司名字呀 "
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_sep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/aty_horizontal_margin"
+        android:layout_marginRight="@dimen/aty_horizontal_margin"
+        android:background="#eee" />
+
+    <include
+        android:id="@+id/com_fund_company_date"
+        layout="@layout/com_company_other_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/aty_horizontal_margin"
+        android:layout_marginRight="@dimen/aty_horizontal_margin"
+        android:background="#eee" />
+
+    <include
+        android:id="@+id/com_fund_company_scale"
+        layout="@layout/com_company_other_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/aty_horizontal_margin"
+        android:layout_marginRight="@dimen/aty_horizontal_margin"
+        android:background="#eee" />
+
+    <include
+        android:id="@+id/com_fund_company_manager"
+        layout="@layout/com_company_other_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/aty_horizontal_margin"
+        android:layout_marginRight="@dimen/aty_horizontal_margin"
+        android:background="#eee" />
+
+    <include
+        android:id="@+id/com_fund_company_register"
+        layout="@layout/com_company_other_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:id="@+id/tv_company_fund_count"
+        style="@style/tv_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_company_head_height"
+        android:background="#eee"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/details_company_margin_horizonal"
+        android:text="旗下基金" />
+
+</LinearLayout>

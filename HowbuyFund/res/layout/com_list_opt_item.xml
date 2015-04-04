@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.howbuy.control.CheckableLinerlayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/theme_fund_item_background_holo_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="@dimen/aty_horizontal_margin"
+    android:paddingRight="@dimen/aty_horizontal_margin"
+    android:paddingTop="5dip" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="1dip" >
+
+        <ImageView
+            android:id="@+id/drag_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="3dp"
+            android:src="@drawable/ic_list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="1dip"
+            android:paddingRight="3dip"
+            android:textColor="@color/text_title"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/networth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:textColor="#a2a2a2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.0"
+        android:paddingRight="5dp"
+        android:gravity="right|center_horizontal" >
+
+        <TextView
+            android:id="@+id/other_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="2dp"
+            android:drawablePadding="2dp"
+            android:textColor="#cc0000"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</com.howbuy.control.CheckableLinerlayout>

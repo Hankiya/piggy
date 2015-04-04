@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_fund_state"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#eee"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_fund_state"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="5"
+        android:clickable="true"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_fund_buy"
+        style="@style/tv_title_large"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="2"
+        android:background="@drawable/xml_bt_buy_bk"
+        android:clickable="true"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:onClick="onXmlBtClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="购买"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="1dip" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end" 
+			android:singleLine="true"
+            android:paddingLeft="1dip"
+            android:paddingRight="3dip"
+            android:textColor="@color/text_title"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/py"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:paddingLeft="1dip"
+            android:paddingRight="3dip"
+            android:textColor="@color/text_normal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.8"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:maxLines="1"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:textColor="@color/text_normal"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="right|center"
+        android:layout_weight="1" >
+
+        <CheckBox
+            android:padding="10dp"
+            android:id="@+id/checkbox"
+            android:focusable="false"
+            style="@style/check_box_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

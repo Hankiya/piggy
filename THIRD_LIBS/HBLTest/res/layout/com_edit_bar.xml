@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.howbuy.control.EditBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#00000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/edit_bar_lay_edit"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="#50EEEEEE" >
+
+        <EditText
+            android:id="@+id/edit_bar_et_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_search_bar"
+            android:hint="搜索关键字"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:textColor="#f00" />
+
+        <ProgressBar
+            android:id="@+id/edit_bar_pb_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/edit_bar_iv_searchicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="9dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search_pressed" />
+
+        <ImageView
+            android:id="@+id/edit_bar_iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:adjustViewBounds="true"
+            android:maxHeight="25dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/xml_bt_clearn" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/edit_bar_bt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:maxHeight="40dp"
+        android:scaleType="centerInside"
+        android:text="取消" />
+
+</com.howbuy.control.EditBar>

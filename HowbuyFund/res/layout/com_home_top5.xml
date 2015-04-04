@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:paddingBottom="2dp" android:orientation="vertical"
+	android:layout_marginTop="25dp">
+	<ImageView android:layout_width="wrap_content" android:id="@+id/iv_group"
+		android:layout_marginLeft="@dimen/aty_horizontal_margin"
+		android:scaleType="centerInside" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true" android:layout_height="@dimen/home_head_height"
+		android:src="@drawable/umeng_socialize_switchimage_choose" />
+	<TextView android:id="@+id/tv_group" android:layout_width="wrap_content"
+		android:layout_height="@dimen/home_head_height"
+		android:layout_alignParentTop="true" android:layout_toRightOf="@id/iv_group"
+		android:layout_marginLeft="10dp" android:gravity="center_vertical"
+		android:textSize="17sp" android:textColor="#333" />
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_below="@id/tv_group" android:layout_height="200dp"
+		android:layout_marginTop="0.8dp" android:orientation="horizontal">
+		<include android:id="@+id/lay_top_char1" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			layout="@layout/com_home_top5_char" />
+		<View android:layout_height="match_parent" android:layout_width="1dp"
+			android:background="#fff5f5f5" />
+		<include android:id="@+id/lay_top_char2" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			layout="@layout/com_home_top5_char" />
+	</LinearLayout>
+	<View android:layout_height="1dp" android:layout_width="match_parent"
+		android:background="#fff5f5f5" android:layout_below="@id/tv_group" />
+</RelativeLayout>

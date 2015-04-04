@@ -1,0 +1,10 @@
+<resources>
+
+   
+     <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <item name="android:displayOptions">showTitle|homeAsUp</item>
+    </style>
+    
+
+</resources>

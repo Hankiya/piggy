@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lock_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp" >
+    
+    <howbuy.android.piggy.widget.LockPatternView
+        android:id="@+id/lockPatternSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip" />
+   
+    <TextView
+        android:id="@+id/sethint"
+        android:layout_below="@+id/lockPatternSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/setpattern"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/setlockhint" />
+    
+
+    <howbuy.android.piggy.widget.LockPatternView
+        android:id="@+id/lockPatternBig"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sethint"
+        android:layout_marginTop="5dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lockPatternBig"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/skipset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dip"
+            android:text="@string/setpatternskip"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/setlockhint"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sethint_reset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dip"
+            android:text="@string/setpatternreset"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/setlockhint"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

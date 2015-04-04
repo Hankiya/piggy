@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<bool name="SECRET_DEBUG_URL">false</bool>
+	<bool name="SECRET_DEBUG_LOG">true</bool>
+	<bool name="SECRET_DEBUG_POP">true</bool>
+	<bool name="SECRET_DEBUG_LOG_FILE">true</bool>
+	<bool name="SECRET_DEBUG_CRASH_DIALOG">false</bool>
+	<bool name="SECRET_DEBUG_CRASH_LAUNCH">false</bool>
+	<bool name="SECRET_DEBUG_CRASH_MUTIFILE">true</bool>
+	<bool name="SET_PUSH">true</bool>
+	<string name="UMENG_APPKEY">4f3e08735270157edd0000eb</string>
+	<string name="JPUSH_APPKEY">f34119a7f241762cf38f2728</string>
+	<string name="UMENG_CHANNEL">360</string>
+	<string name="channeId">102401479</string>
+	<string name="TransactionCoopId">A20131204</string>
+	<string name="TransactionActionId">HD0001</string>
+	<string name="BUILD_PRIVATE_VERION">1</string>
+	
+</resources>
+<!--jpush_release_key: f34119a7f241762cf38f2728 -->
+<!--jpush_debug_key: 1426f9e49a1f839daa67d9f9 -->

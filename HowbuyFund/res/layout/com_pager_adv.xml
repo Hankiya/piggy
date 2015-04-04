@@ -1,0 +1,28 @@
+<com.howbuy.control.HomeAdvLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pageadv_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+ <!--    <com.howbuy.control.SimpleIndicator
+        xmlns:renzh="http://schemas.android.com/apk/res/com.howbuy.fund"
+        android:id="@+id/pageadv_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:padding="2dp"
+        renzh:bool_show_num="true"
+        renzh:float_item_gap="3dp"
+        renzh:float_item_wid_normal="8dp"
+        renzh:float_item_wid_selected="10dp"
+        renzh:int_color_item_normal="#aa00a9ff"
+        renzh:int_color_item_selected="#ff00a9ff"
+        renzh:int_color_num_normal="#ee000000"
+        renzh:int_color_num_selected="#ff000000"
+        renzh:int_item_count="0"
+        renzh:int_selected_item="0" /> -->
+
+</com.howbuy.control.HomeAdvLayout>

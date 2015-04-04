@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.actionbarsherlock.internal.widget.IcsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/custom_tab_indicator_divider"
+    android:dividerPadding="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/aty_horizontal_margin"
+    android:paddingLeft="@dimen/details_margin_horizonal"
+    android:paddingRight="@dimen/details_margin_horizonal"
+    android:paddingTop="@dimen/list_item_padding_vertical"
+    android:onClick="onXmlBtClick"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="日期"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fund_date"
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:textColor="#333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_fund_value_type"
+            style="@style/tv_normal"
+            android:layout_marginBottom="8dp"
+            android:tag="万份收益"
+            android:text="净值"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fund_value"
+            style="@style/tv_title_large"
+            android:fontFamily="medium"
+            android:text=""
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_fund_increase_type"
+            style="@style/tv_normal"
+            android:layout_marginBottom="8dp"
+            android:tag="七日年化"
+            android:text="日涨幅"
+            android:textColor="#666"
+            android:textSize="14sp"  />
+
+        <TextView
+            android:id="@+id/tv_fund_increase"
+            style="@style/tv_title_large"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</com.actionbarsherlock.internal.widget.IcsLinearLayout>

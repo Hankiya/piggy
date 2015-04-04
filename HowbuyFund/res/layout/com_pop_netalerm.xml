@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:gravity="center_horizontal">
+	<TextView android:layout_width="wrap_content"
+		android:layout_marginTop="200dp" android:layout_height="wrap_content"
+		android:duplicateParentState="true" android:text="无法连接到网络"
+		android:textColor="#ffcccccc" android:textSize="24sp" />
+
+	<TextView android:layout_width="wrap_content" android:id="@+id/tv_net_setting"
+		android:clickable="true" android:onClick="onXmlBtClick"
+		android:padding="10dp" android:layout_marginTop="22dp"
+		android:layout_height="wrap_content" android:background="@drawable/xml_ib_back_gray"
+		android:text=" 网络设置" android:drawableLeft="@drawable/set_icon"
+		android:textColor="#ff666666" android:textSize="18sp" />
+</LinearLayout>
+ 

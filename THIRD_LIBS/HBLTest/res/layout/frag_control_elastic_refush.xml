@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<com.howbuy.lib.control.ElasticLayout
+		android:id="@+id/elastic_root" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="#aa777ff7">
+		<TextView android:layout_width="match_parent"
+			android:layout_height="match_parent" android:textSize="14sp"
+			android:textColor="#ff000000" android:id="@+id/tv_result"
+			android:background="#ff0000" android:layout_margin="20dp" />
+	</com.howbuy.lib.control.ElasticLayout>
+</LinearLayout>

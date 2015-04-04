@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS tb_others( 
+       key TEXT  NOT NULL,
+       subkey TEXT  NOT NULL,
+       value BLOB  NULL,
+       state INTEGER  NULL,
+       date LONG  NULL 
+); 
+
+CREATE TABLE IF NOT EXISTS tb_search_poi(
+        userkey    TEXT,
+        uuid       TEXT,
+        title      TEXT,
+        extras     TEXT,
+        time       LONG  NULL ,
+        primary key(userkey,title)
+);
+
+ 

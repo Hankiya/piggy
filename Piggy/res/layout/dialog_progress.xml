@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/progressimg"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" 
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/progressimg_money"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/progressimg"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

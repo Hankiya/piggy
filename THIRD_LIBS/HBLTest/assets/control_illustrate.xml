@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interfaces>
+    <function
+        name="SlidBitView"
+        funcdescribe="slid nums"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragSlidNums" >
+    </function>
+    <function
+        name="ExpandLayout"
+        funcdescribe="expand layout"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragExpand" >
+    </function>
+    
+    <function
+        name="CircleMenu"
+        funcdescribe="转盘,环形菜单"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlCircleMenu" >
+    </function>
+
+    <function
+        name="ScratchCard"
+        funcdescribe="模拟刮刮卡"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlScratchCard" >
+    </function>
+
+       <function
+        name="SimpleChartView"
+        funcdescribe="简单曲线"
+        return="com.howbuy.control"
+        url="com.howbuy.frag.control.FragControlSimpleChar" >
+      </function>
+    
+       
+    <function
+        name="CurveSfView"
+        funcdescribe="3D矩形和曲线"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControl3DCurve" >
+    </function>
+
+    <function
+        name="CurveSfView"
+        funcdescribe="各种曲线和矩形图"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlCurve" >
+    </function>
+
+    <function
+        name="CurveView"
+        funcdescribe="手式曲线"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlSimpleCurve" >
+    </function>
+    
+    <function
+        name="CircleView"
+        funcdescribe="饼形图"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlPie" >
+    </function>
+
+    <function
+        name="SearchBar,EditBar"
+        funcdescribe="搜索和输入框"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlSearchEdit" >
+    </function>
+
+    <function
+        name="VipHeadView,AlphaFrame,Rotate3D"
+        funcdescribe="头像选择,淡入淡出,3D旋转"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlViphead" >
+    </function>
+
+    <function
+        name="RandomBubbleView"
+        funcdescribe="随机泡泡控件"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlBubble" >
+    </function>
+
+    <function
+        name="ElasticLayout"
+        funcdescribe="可以上下刷新 四个方向都有弹性的容器"
+        return="com.howbuy.lib.control"
+        url="com.howbuy.frag.control.FragControlElasticRefush" >
+    </function>
+
+</interfaces>

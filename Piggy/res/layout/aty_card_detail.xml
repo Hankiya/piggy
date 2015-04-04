@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <include layout="@layout/item_bank" />
+
+    <RelativeLayout
+        android:id="@+id/modfy_branchbank_lay"
+        style="@style/piggy_setting_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/setting_top_bg"
+        android:baselineAligned="true"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/piggy_settitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="0dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="修改支行" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action_next_item" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:paddingLeft="80dp"
+            style="@style/piggy_settitle_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrow"
+            android:text="上海孙桥支行"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <howbuy.android.piggy.widget.ImageTextBtn
+        android:id="@+id/submit_btn"
+        style="@style/piggy_text_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_sure_bg"
+        android:clickable="true"
+        android:text="验证银行卡" />
+
+
+</LinearLayout>

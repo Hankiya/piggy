@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/coindown01"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown02"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown03"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown04"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown05"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown06"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown07"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown08"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown9"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown10"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown11"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown12"
+        android:duration="@integer/progresstime"/>
+    <item
+        android:drawable="@drawable/coindown13"
+        android:duration="@integer/progresstime"/>
+</animation-list>

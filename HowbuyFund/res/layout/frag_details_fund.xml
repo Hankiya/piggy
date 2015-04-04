@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/com_details_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ff9500" />
+
+    <include layout="@layout/com_details_char_port" />
+
+    <include
+        android:id="@+id/lay_fund_value"
+        layout="@layout/com_details_networth" />
+
+    <ViewStub
+        android:id="@+id/vs_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:visibility="gone"
+        android:layout="@layout/com_details_level" />
+
+    <TextView
+        style="@style/tv_normal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginLeft="@dimen/details_margin_horizonal"
+        android:gravity="center_vertical"
+        android:text="业绩表现"
+        android:textColor="#333"
+        android:textSize="14sp" />
+
+    <com.howbuy.control.ExpandGroup
+        android:id="@+id/lay_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/details_simple_list_margin_top"
+        android:descendantFocusability="beforeDescendants"
+        android:onClick="onXmlBtClick" >
+
+        <ListView
+            android:id="@+id/lv_per_fixed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@null" />
+
+        <ListView
+            android:id="@+id/lv_per_expand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@null"
+            android:paddingTop="1dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_expand"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/details_margin_horizonal"
+            android:background="#fff"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_down_1" />
+    </com.howbuy.control.ExpandGroup>
+
+    <include
+        android:id="@+id/lay_fund_heavy_hold"
+        layout="@layout/com_details_other_item" />
+
+    <include
+        android:id="@+id/lay_fund_companyinf"
+        layout="@layout/com_details_other_item" />
+
+    <include
+        android:id="@+id/lay_fund_manager"
+        layout="@layout/com_details_other_item" />
+
+    <TextView
+        android:id="@+id/tv_fund_history"
+        style="@style/tv_normal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/xml_home_item_sector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onXmlBtClick"
+        android:text="历史净值"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <com.howbuy.control.CheckHeadText
+        android:id="@+id/tv_fund_trade_rate"
+        style="@style/tv_normal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/xml_home_item_sector"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:onClick="onXmlBtClick"
+        android:text="交易费率"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/v_fund_bottom" />
+
+</LinearLayout>

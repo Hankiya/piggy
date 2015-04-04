@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="howbuy.android.palmfund" android:installLocation="auto"
+	android:versionCode="37" android:versionName="3.1.0">
+	<application android:name="com.howbuy.component.AppFrame"
+		android:allowBackup="true" android:hardwareAccelerated="true"
+		android:label="@string/app_name" android:logo="@drawable/ic_logo"
+		android:icon="@drawable/my_start" android:theme="@style/theme_fund">
+		<activity android:name="com.howbuy.aty.AtyEntry"
+			android:noHistory="true" android:screenOrientation="portrait"
+			android:label="@string/app_name" android:icon="@drawable/my_start"
+			android:theme="@style/theme_fund_notitle">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.howbuy.aty.AtyTbMain"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:screenOrientation="portrait" android:theme="@style/theme_fund"
+			android:windowSoftInputMode="adjustPan" />
+        <!-- stateVisible|adjustResize -->
+		<activity android:name="com.howbuy.aty.AtyEmpty"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:screenOrientation="portrait" android:theme="@style/theme_fund"
+			android:windowSoftInputMode="adjustResize" />
+		<activity android:name="com.howbuy.aty.AtyEmptyTab"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:screenOrientation="portrait" android:theme="@style/theme_fund"
+			android:windowSoftInputMode="adjustPan" />
+		<activity android:name="com.howbuy.aty.AtyUpdate"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:theme="@style/theme_fund_dialog" android:windowSoftInputMode="adjustPan" />
+		<activity android:name="com.howbuy.aty.AtySettings"
+			android:screenOrientation="portrait" />
+		<activity android:name="com.howbuy.aty.AtySecret"
+			android:screenOrientation="portrait" />
+
+        <!-- 分享编辑页 -->
+		<activity android:name="com.umeng.socialize.view.ShareActivity"
+			android:configChanges="orientation|keyboard" android:launchMode="singleTask"
+			android:noHistory="true" android:theme="@style/Theme.UMDialog"
+			android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!-- 微信分享回调 -->
+		<activity android:name="howbuy.android.palmfund.wxapi.WXEntryActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:exported="true" android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+		<service android:name="com.howbuy.component.AppService" />
+
+        <!-- ###################添加UmengAppkey###################### -->
+		<meta-data android:name="UMENG_APPKEY" android:value="@string/UMENG_APPKEY" />
+		<meta-data android:name="UMENG_CHANNEL" android:value="@string/UMENG_CHANNEL" />
+		<meta-data android:name="channeId" android:value="@string/channeId" />
+		<meta-data android:name="TransactionCoopId" android:value="@string/TransactionCoopId" />
+		<meta-data android:name="TransactionActionId" android:value="@string/TransactionActionId" />
+        <!-- 线上  f34119a7f241762cf38f2728 -->
+        <!-- 测试  1426f9e49a1f839daa67d9f9 -->
+		<meta-data android:name="JPUSH_APPKEY" android:value="@string/JPUSH_APPKEY" />
+		<meta-data android:name="JPUSH_CHANNEL" android:value="developer-default" />
+
+        <!-- Jpush -->
+		<receiver android:name="com.howbuy.receiver.JpushReceiver"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+				<action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <!--
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />  Required  用户接收SDK通知栏信息的intent
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> Required  用户打开自定义通知栏的intent                -->
+				<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+				<action android:name="cn.jpush.android.intent.ACTION_MESSAGE_RECEIVED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+				<category android:name="howbuy.android.palmfund" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.howbuy.receiver.UpdateReceiver"
+			android:enabled="true" android:exported="true">
+			<intent-filter>
+				<action android:name="howbuy.android.palmfund.BROADCAST_UPDATE_APP" />
+			</intent-filter>
+		</receiver>
+        <!-- Required SDK核心功能 -->
+        <!--
+             <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="howbuy.android.trustcollection" />
+            </intent-filter>
+        </activity>        -->
+
+		<service android:name="cn.jpush.android.service.DownloadService"
+			android:enabled="true" android:exported="false">
+		</service>
+		<service android:name="cn.jpush.android.service.PushService"
+			android:enabled="true" android:exported="false">
+			<intent-filter>
+				<action android:name="cn.jpush.android.intent.REGISTER" />
+				<action android:name="cn.jpush.android.intent.REPORT" />
+				<action android:name="cn.jpush.android.intent.PushService" />
+				<action android:name="cn.jpush.android.intent.PUSH_TIME" />
+			</intent-filter>
+		</service>
+
+		<receiver android:name="cn.jpush.android.service.PushReceiver"
+			android:enabled="true">
+			<intent-filter android:priority="1000">
+				<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+				<category android:name="howbuy.android.palmfund" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.USER_PRESENT" />
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+	</application>
+    <!-- =========================================================== -->
+
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+
+	<permission android:name="howbuy.android.palmfund.permission.JPUSH_MESSAGE"
+		android:protectionLevel="signature" />
+
+	<uses-permission android:name="howbuy.android.palmfund.permission.JPUSH_MESSAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+	<!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
+
+</manifest>

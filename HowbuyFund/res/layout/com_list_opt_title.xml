@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_title_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="#EAEAEA"
+      android:paddingLeft="@dimen/aty_horizontal_margin"
+    android:paddingRight="@dimen/aty_horizontal_margin"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/option_title_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="@string/fundname" />
+
+    <LinearLayout
+        android:id="@+id/option_title_networth_lay"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:gravity="right|center_vertical" >
+
+        <TextView
+            android:id="@+id/option_title_networth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fundjjjz" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/option_title_networth_image"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_down_21"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option_title_change_lay"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0"
+        android:gravity="right|center_vertical">
+
+        <TextView
+            android:id="@+id/option_title_change"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_title"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hbdr" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/option_title_change_image"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_down_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

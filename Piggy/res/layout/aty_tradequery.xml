@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/emptytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list"
+        android:fadingEdge="none"
+        android:clipToPadding="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:footerDividersEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp" />
+<!--         android:divider="@android:color/transparent" -->
+
+</FrameLayout>

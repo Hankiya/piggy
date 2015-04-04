@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lock_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/titile"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/setuser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dip"
+            android:text="您好，--"
+            android:textColor="@color/windowscolor"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+        <TextView
+            android:id="@+id/sethint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="请绘制解锁密码解锁"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+    </LinearLayout>
+
+    <howbuy.android.piggy.widget.LockPatternView
+        android:id="@+id/lockPatternView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titile"
+        android:layout_above="@+id/buttom"
+        android:layout_marginTop="10dip" />
+
+    <LinearLayout
+        android:id="@+id/buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dip"
+         android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/skipset"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+           android:paddingLeft="10dp"
+            android:text="忘记手势密码？"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/windowscolor" />
+
+        <TextView
+            android:id="@+id/sethint_reset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/setpatternreset"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/setlockhint"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

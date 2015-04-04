@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView android:drawableLeft="@drawable/ic_bz_two" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监管银行"/>
+	<TextView android:layout_width="wrap_content" android:gravity="center"  android:layout_height="wrap_content" android:text="中国民生银行（资金全程监管）" />
+</LinearLayout>

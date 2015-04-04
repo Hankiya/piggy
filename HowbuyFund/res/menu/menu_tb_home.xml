@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always"
+        android:title="search"/>
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="more">
+        <menu>
+            <item
+                android:id="@+id/menu_account"
+                android:title="@string/menu_text_account"/>
+            <item
+                android:id="@+id/menu_subscribe"
+                android:title="@string/set_title_subscribe"/>
+            <item
+                android:id="@+id/menu_feedback"
+                android:title="@string/set_title_feedback"/>
+            <item
+                android:id="@+id/menu_recommend"
+                android:title="@string/set_title_recommend"/>
+            <item
+                android:id="@+id/menu_setting"
+                android:title="@string/menu_text_setting"/>
+            <item
+                android:id="@+id/menu_about"
+                android:title="@string/menu_text_about"/>
+        </menu>
+    </item>
+
+</menu>

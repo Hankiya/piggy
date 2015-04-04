@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RIndicator_style">
+        <attr name="int_color_item_normal" format="color" />
+        <attr name="int_color_item_selected" format="color" />
+        <attr name="int_color_num_normal" format="color" />
+        <attr name="int_color_num_selected" format="color" />
+        <attr name="bool_show_num" format="boolean" />
+        <attr name="float_item_gap" format="dimension" />
+        <attr name="float_item_wid_normal" format="dimension" />
+        <attr name="float_item_wid_selected" format="dimension" />
+        <attr name="int_item_count" format="integer" />
+        <attr name="int_selected_item" format="integer" />
+    </declare-styleable>
+
+</resources>

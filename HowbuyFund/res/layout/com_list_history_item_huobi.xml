@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/details_fund_history_list_item_height" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/details_fund_history_list_item_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/aty_horizontal_margin"
+        android:paddingRight="@dimen/aty_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_valued"
+            android:layout_width="dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+         
+    </LinearLayout>
+
+</RelativeLayout>

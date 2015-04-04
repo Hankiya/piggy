@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <include layout="@layout/item_bank" />
+
+    <LinearLayout
+        style="@style/piggy_input_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/lefttext1"
+                style="@style/piggy_intput_lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/bankprovince" />
+
+            <Button
+                android:id="@+id/provice_btn"
+                style="@style/piggy_spinnertitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lefttext1"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="left|center_vertical"
+                android:text="请选择" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/piggy_input_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/lefttext"
+                style="@style/piggy_intput_lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/bankbranch" />
+
+            <Button
+                android:id="@+id/bankbranch_btn"
+                style="@style/piggy_spinnertitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lefttext"
+                android:background="@null"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_action_expand"
+                android:gravity="left|center_vertical"
+                android:text="请选择" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <howbuy.android.piggy.widget.ImageTextBtn
+        android:id="@+id/submit_btn"
+        style="@style/piggy_text_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_sure_bg"
+        android:clickable="true"
+        android:text="@string/surebind" />
+</LinearLayout>
+
+

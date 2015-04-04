@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_login"
+        android:showAsAction="withText"
+         android:textSize="16sp"
+        android:title="@string/login"/>
+
+</menu>

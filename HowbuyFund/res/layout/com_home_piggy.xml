@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.howbuy.control.HomePiggyLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingLeft="30dp"
+	android:background="@drawable/banner">
+
+	<TextView android:id="@+id/tv_value" style="@style/tv_title_large"
+		android:fontFamily="medium" android:text="4.60%" android:textColor="#ffcc0000"
+		android:textStyle="bold" android:textSize="35sp" />
+
+	<TextView android:id="@+id/tv_submit" style="@style/tv_title_large"
+		android:layout_marginTop="10dp" android:background="@drawable/xml_bt_buy_bk"
+		android:clickable="true" android:duplicateParentState="false"
+		android:gravity="center" android:onClick="onXmlBtClick"
+		android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:paddingTop="5dp" android:paddingBottom="5dp" android:minWidth="80dp"
+		android:text="存钱" android:textColor="#fff" android:textSize="18sp" />
+</com.howbuy.control.HomePiggyLayout>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<interfaces activity="com.howbuy.frag.FragFunction">
+	<function name="AAParSimuRecommend" funcdescribe="获取私募首页信息"
+		return="SimuRecommendProto" url="/simu/simuRecommend.protobuf">
+	</function>
+	<function name="AAParFundChart" funcdescribe="获取净值图表"
+		return="HistoryFundNetValueChart" url="">
+		private String fundCode = null;// 000001 N 基金代码
+		private String isPrivate = null;// 是否为私募
+		private String startTime = null;// yymmdd N
+		// 需要的数据起始时间（本地无数据，不传；不知道起始时间是何时，不传，代表需要获取到最老时间的数据）
+		private String endTime = null;// yymmdd N
+		// 需要数据的结束时间（本地无数据，不传；不知道结束时间是何时，不传，代表需要获取到最新时间的数据）
+		private int needDataCount = 0;// int N需要的数据条数（仅在本地数据库没有数据时，传该值）
+	</function>
+
+	<function name="AAParFtenSimuBasicInf" funcdescribe="获取私募基金基本信息"
+		return="SimuBasicInfo" url="">
+	</function>
+
+	<function name="AAParUserStatusCheck" funcdescribe="用户身份验证"
+		return="UserCheck" url="">
+	</function>
+
+	<function name="AAParFundTradeInfo" funcdescribe="获取基金交易属性"
+		return="FundTradeInfo" url="">
+	</function>
+
+	<function name="AAParFundInfoByType" funcdescribe="获取指定特性产品"
+		return="FundInfo" url="">
+	</function>
+
+	<function name="AAParFundHistoryValue" funcdescribe="获取净值历史"
+		return="HistoryFundNetValueOfPage" url="">
+	</function>
+
+	<function name="AAParFtenHeavyHoldingInfo" funcdescribe="重仓持股列表"
+		return="ZccgInfo" url="">
+	</function>
+
+	<function name="ParCheckAppUpdate" funcdescribe="检查应用程序是否需要更新"
+		return="HostDistribution" url="start/checkupdate.protobuf">
+	</function>
+
+	<function name="ParDingYue" funcdescribe="信托产品订阅" return="Common"
+		url="trustdaquan/trustproductbook.protobuf">
+		int type = 0; // N 订阅类型：推送，短信，取消推送订阅，取消短信订阅
+		String authCode = null;// 验证码
+		String yqnh = null; // Y 预期年化收益
+		String gsbj = null;// Y 公司背景
+		String cpnx = null;// Y 产品年限
+		String mDeviceTag = null; // Y 订阅推送时设备令牌
+		String phoneNum = null; // Y 订阅短信接收手机号码
+	</function>
+
+	<function name="ParDingYueCheckCode" funcdescribe="获取订阅验证码 "
+		return="Common" url="trustdaquan/getverifycode.protobuf">
+		String phoneNum = null; // unnull 订阅短信接收手机号码
+	</function>
+
+	<function name="ParFeedback" funcdescribe="用户反馈 " return="Common"
+		url="feedback/addfeedback.protobuf">
+		String phone = null;// Y 用户手机号码
+		int evaluation = null; // N 评分
+		String content = null; // N 评价内容(osVersion、root标志，解锁，越狱) String name
+		;//string N 称呼
+		String email; //string Y email	</function>
+
+	<function name="ParFilterCondition" funcdescribe="获取查询条件"
+		return="QueryConditionsProto" url="trustdaquan/getquerycondtions.protobuf">
+		String version = null; // unnull 信托条件版本
+	</function>
+
+	<function name="ParMakeAppointment" funcdescribe="预约信托或私募"
+		return="Common" url="trust/preContract.protobuf">
+		String custName=null; // N 用户称呼
+		String mobile =null; //N 用户联系方式
+		int fundType=null; // N 预约产品种类:固定收益:0；私募：1（无该字段时为固定收益预约）
+		String memo =null; //Y 用户备注信息
+	</function>
+
+	<function name="ParNewsByPage" funcdescribe="分页按类型获取新闻"
+		return="NewsInfo" url="news/listbytype.protobuf">
+		String newsType =null;//0 N 分类编码
+		String basicType=null;// Y 子类型（信托资讯传209，不传则为非信托资讯）
+		int pageCount=1;// 20 N 每页条数
+		int currentPage=1;// 0 N 当前请求页
+		int newestVer=0;// int N 当前批次请求最新一条的时间戳
+	</function>
+
+	<function name="ParResearchByPage" funcdescribe="分页按类型获取研报"
+		return="OpinionInfo" url="opinion/listbytype.protobuf">
+		String opinionType =null;//0 N 分类编码
+		String basicType=null;// Y 子类型（信托资讯传209，不传则为非信托资讯）
+		int pageCount=1;// 20 N 每页条数
+		int currentPage=1;// 0 N 当前请求页
+		int newestVer=0;// int N 当前批次请求最新一条的时间戳
+	</function>
+
+	<function name="ParRunChartData" funcdescribe="获取信托产业走势图"
+		return="XttztjList" url="trustdaquan/xttztjduration.protobuf">
+		String tzfxCode = null; // unnull 投资方向代号
+	</function>
+
+	<function name="ParShare2Friends" funcdescribe="推荐好友" return="Common"
+		url="mgm/addmgm.protobuf">
+		String phones=null;//电话号15028934723-17383777348;
+	</function>
+
+	<function name="ParTrustListByID" funcdescribe="单多条获取信托列表 "
+		return="TrustInfoList" url="trustdaquan/querytrustinfolist.protobuf">
+		String pids = null; // unnull 想要获取的产品的id，多个产品id之间用分号隔开
+	</function>
+
+	<function name="ParTrustListByPage" funcdescribe="分页获取信托列表"
+		return="TrustInfoListOfPage" url="trustdaquan/querytrustinfolistofpage.protobuf">
+		int pageCount = 1; // unnull 每页条数
+		int currentPage = 1; // nunull 当前请求页（从1开始）
+		String dataVersion = null; // 数据版本
+		int bestFlag = 0; // 无该字段或该字段为1表示请求精品，0表示请求所有符合其他条件的产品
+		String xtgs = null; // 信托公司id
+		String gsbj = null; // 公司背景（动态）
+		String xtfl = null; // 信托分类（动态）
+		String tzfx = null; // 投资方向（动态）
+		String yqsy = null; // 预期收益（动态）
+		String cpnx = null; // 产品年限（动态）
+		String qszj = null; // 起始资金（动态）
+		String clrq = null; // 成立日期（暂无）
+		String fsrq = null; // 发售日期（暂无）
+		String fszt = null; // 发售状态（暂无）
+		String gjz = null; // 关键字（为空时可以忽略该关键字）
+	</function>
+
+	<function name="ParAdvertisementList" funcdescribe="获取广告列表"
+		return="AdvertList" url="advert/advertlist.protobuf">
+		int imageHeight=0;
+		int imageWidth=0;
+	</function>
+
+	<function name="ParBook" funcdescribe="产品信息订阅" return="Common"
+		url="common/addbook.htm">
+		int type=0;//Int N 订阅类型：短信：0；推送：1
+		String columns=null;// N 订阅多个栏目时，栏目ID用分号隔开，如：1234;1238;1287
+		String phoneNum=null;// Y 短信订阅时接受订阅短信的号码
+		String token=null;// Y 推送订阅时设备令牌
+		String deviceId =null;// Y 推送订阅时设备ID
+		String customNo =null;// Y 推送订阅时用户ID
+		String productId=null;// Y 推送订阅时产品ID
+	</function>
+
+	<function name="ParCheckCode" funcdescribe=" 获取验证码" return="Register"
+		url="register/register.protobuf">
+		String regSource=null;// 2 N 注册来源
+		String phone=null;// 13333333333 N 用户名（手机号）
+	</function>
+
+	<function name="ParCommentByPage" funcdescribe="分页获取评论信息"
+		return="CommentInfoList" url="comments/fundcommentlist.protobuf">
+		String code =null;//   基金代码
+		int articleType =0;// N 基金类型
+		int pageCount=1;// 20 N 每页条数
+		int currentPage =1;// 0 N 当前请求页数
+	</function>
+
+	<function name="ParCommentByTimestamp" funcdescribe="根据时间戳获取评论信息"
+		return="CommentInfoList" url="comments/fundcommentlist.protobuf">
+		String code =null;//   基金代码
+		int articleType =0;// N 基金类型
+		String posttime=null;//当前时间戳
+	</function>
+
+	<function name="ParFinanceDebtList" funcdescribe="持债明细列表"
+		return="FundYxzcgMain" url="ften/czmx/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFinanceIndexList" funcdescribe="财务指标列表"
+		return="FundYxzcgMain" url="ften/cwzb/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFixedInvestOrderByPage" funcdescribe="分页获取定投排行数据"
+		return="Fundfixed" url="fund/dthb.protobuf">
+		int pageNum=0;// N 页数
+		int pageCount;// 一页显示多少
+		int type=0;// 分页字段（*）
+		int order=0;// 升降序（*）
+		String kind=null; // 基金种类
+	</function>
+
+	<function name="ParFtenAchieveProformance" funcdescribe="业绩表现"
+		return="PerformanceInfo" url="ften/yjbx/yjbx.protobuf">
+		int isPrivate=0;//是否为私募
+		String code=null;// XXXX N 基金代码
+	</function>
+
+	<function name="ParFtenCompanyInfo" funcdescribe="基金公司 信息."
+		return="CompanyInfo" url="ften/company/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码 private String justName="0"; //
+		0或不传，则下发全部信息，1时，只下发公司名称字段
+	</function>
+
+	<function name="ParFtenDebtList" funcdescribe="资产负债列表" return="FundYxzcgMain"
+		url="ften/zcfz/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenfundAnnoList" funcdescribe="基金公告列表"
+		return="FundAnnoList" url="ften/jjgg/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenHeavyHolding" funcdescribe="重仓持股列表"
+		return="FundZccgMain" url="ften/zccg/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenInvestList" funcdescribe="行业投资列表"
+		return="FundYxzcgMain" url="ften/hytz/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenManagerInf" funcdescribe="基金经理详细信息页"
+		return="ManagerDetailInfoList" url="ften/manager/detail/XXXX.protobuf?type=gm">
+		String manageid=null;// XXXX N 基金经理代码 String isPrivate=null;//1 or
+		0;是否是私募。
+	</function>
+
+	<function name="ParFtenManagerList" funcdescribe="基金经理列表"
+		return="ManagerInfoList" url="ften/manager/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+	</function>
+
+	<function name="ParFtenProfitDistributeList" funcdescribe="利润分配列表"
+		return="FundYxzcgMain" url="ften/lrfp/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenPropertyConfigList" funcdescribe="资产配置列表"
+		return="FundYxzcgMain" url="ften/zcpz/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenQuarterReportList" funcdescribe="季度报告列表"
+		return="FundAnnoList" url="ften/jdbg/XXXX.protobuf">
+		String code=null;// XXXX N 公告主键
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenRecessiveHeavyHolding" funcdescribe="隐性重仓股列表"
+		return="FundYxzcgMain" url="ften/yxzcg/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenRecruitList" funcdescribe="招募说明书列表"
+		return="FundAnnoList" url="ften/zmsms/XXXX.protobuf">
+		String code=null;// XXXX N 公告主键
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenTicketCombinedList" funcdescribe="券种组合列表"
+		return="FundYxzcgMain" url="ften/qzzh/XXXX.protobuf">
+		String code=null;// XXXX N 基金代码
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFtenYearReportList" funcdescribe="年度报告列表"
+		return="FundAnnoList" url="ften/ndbg/XXXX.protobuf">
+		String code=null;// XXXX N 公告主键
+		int pageCount=1; // 每页数量
+		int currentPage =1; // 当前页
+	</function>
+
+	<function name="ParFundRunChartData" funcdescribe="获取基金走势图"
+		return="FundDruationProto" url="nav/duration.protobuf">
+		String fundCode=null;// XXXX-00002 M 基金代码
+		String startDate=null;// M 基金数据开始时间
+		String endDate=null;// 基金数据结束时间
+	</function>
+
+	<function name="ParFundsNetValue" funcdescribe="获取基金净值(分页)"
+		return="FundFixedUpdate" url="fund/dthb.protobuf">
+		int type=0 ;// int N 基金分类(*)
+		int cstmFlag=0;// N 自选开关（0为全部，1为自选）
+		String cstmCodes=null;// String Y 自选标志为1时才填充该字段，该字段由自选基金Code拼接而成，以分号分隔
+		int dateFlag=0;// N 按时间分类开关，0关；1开
+		int orderType=0;// Int N 排序类型(*)
+		int orderIncrease=0;// Int N 增序为0，降序为1
+		int pageNum =1;// N 页数
+		int pageCount =1;// 一页显示多少
+	</function>
+
+	<function name="ParFundsNetValueByIDs" funcdescribe="单多条获取基金净值"
+		return="FundInfosList" url="start/navinfoquery.protobuf">
+		String fundCode=null;// XXXX-YYYY M 基金代码
+	</function>
+
+	<function name="ParFundsNetValueBatch" funcdescribe="基金净值更新"
+		return="FundInfosXXXX" url="start/updatebytype.protobuf">
+		String type=null;//基金分类(*)
+		type:1代表开放式、2代表货币式、3代表私募、4代表封闭式、5代表理财类基金(理财类基金返回的字段跟货币式一样)
+		String typeVer 该分类的本地数据版本号 日期字串
+	</function>
+
+	<function name="ParFundsValueByPage" funcdescribe="分布获取基金净值"
+		return="FundInfo???OfPage" url="start/fund/navupdatepage.protobuf">
+		String type =null;// N 基金分类(*)
+		int cstmFlag=0;// int N 自选开关（0为全部，1为自选）
+		String cstmCodes=null;// String Y 自选标志为1时才填充该字段，该字段由自选基金Code拼接而成，以分号分隔
+		int dateFlag=0;// int N 按时间分类开关，0关；1开
+		int orderType=0;// Int N 排序类型(*)
+		int orderIncrease=0;// Int N 增序为0，降序为1
+		int pageNum=1;// N 页数
+		int pageCount=1;// 一页显示多少
+	</function>
+
+	<function name="ParLogin" funcdescribe="登陆" return="Login"
+		url="login/login.protobuf">
+		String userName=null;
+		String loginPasswd=null;
+	</function>
+
+	<function name="ParNewsAndResearchByKeyword" funcdescribe="根据关键字获取新闻和研报"
+		return="NewsAndOpinionInfo" url="query/newsandopinion.protobuf">
+		String keyword=null;// 0 N 关键字
+		int pageCount=1;// 20 N 每页条数
+		int currentPage =1;// 0 N 当前请求页
+	</function>
+
+	<function name="ParNewsByKeyword" funcdescribe=" 根据关键字获取新闻"
+		return="NewsInfo" url="news/listbytag.protobuf">
+		String keyword=null;// 0 N 关键字
+		int pageCount=1;// 20 N 每页条数
+		int currentPage =1;// 0 N 当前请求页
+	</function>
+
+	<function name="ParFundPerformance" funcdescribe="获取基金业绩表现信息"
+		return="PerformanceInfo" url="ften/fund/yjbx.protobuf">
+		String code=null;// XXXX N 基金代码; int isPrivate =0 //是否是私募.
+	</function>
+
+	<function name="ParRegister" funcdescribe="注册" return="Register"
+		url="register/register.protobuf">
+		String phone=null;// 13333333333 N 用户名（手机号）
+		String password=null;// abcdefg N 密码
+		String verificationCode =null;//1234 Y 验证码
+		int regSource=2;// 2 来源
+	</function>
+
+	<function name="ParResearchByKeyword" funcdescribe="根据关键字获取研报"
+		return="OpinionInfo" url="opinion/listbytag.protobuf">
+		String keyword=null;// 0 N 关键字
+		int pageCount=1;// 20 N 每页条数
+		int currentPage =1;// 0 N 当前请求页
+	</function>
+
+	<function name="ParSendComment" funcdescribe="发评论信息" return="Common"
+		url="comments/commentadd.protobuf">
+		String code =null;//   基金代码
+		int articleType =0;// N 基金类型
+		String userid =null;//     用户id
+		String username =null;// Y 用户名称
+		String comments =null;// String   评论内容
+		String refCommentID =null;// Y 引用的评论的ID，为空则为发布评论
+	</function>
+
+	<function name="ParSendUserActions" funcdescribe="用户信息收集"
+		return="Common" url="behavior/addbehavior.protobuf">
+		String infoList=null;
+	</function>
+
+	<function name="ParSimuFundsValueByPage" funcdescribe="分页获取私募基金净值"
+		return="FundInfoSimusOfPage" url="start/simu/navupdatepage.protobuf">
+		int cstmFlag=0;// int N 自选开关（0为全部，1为自选）
+		String cstmCodes=null;// String Y 自选标志为1时才填充该字段，该字段由自选基金Code拼接而成，以分号分隔
+		int dateFlag=0;// int N 按时间分类开关，0关；1开
+		int orderType=0;// Int N 排序类型(*)
+		int orderIncrease=0;// Int N 增序为0，降序为1
+		int pageNum=1;// N 页数
+		int pageCount=1;// 一页显示多少
+	</function>
+
+	<function name="ParStart" funcdescribe="启动接口" return="HostDistribution"
+		url="start/datasynchronize.protobuf">
+		String basicInfoVer=null;// 20110522 N 基金基本信息版本号
+		String kfsVer =null;// N 开放式基金净值版本号
+		String fbsVer =null;// N 封闭式基金净值版本号
+		String hbsVer =null;// N 货币式基金净值版本号
+		String smVer =null;// N 私募基金净值版本号
+		String managerVer=null;// 20110522 N 基金经理版本号
+		String companyVer =null;// 20110522 N 基金公司版本号
+		String newsTypeVer =null;// 1L N 资讯分类版本号
+		String opinionTypeVer=null;// 1L N 研报分类版本号
+	</function>
+
+	<function name="ParSyncOptional" funcdescribe="同步自选基金" return="ICSynFavFund"
+		url="favfund/datasynchronize.protobuf">
+		String userName=null;//13333333333 N 用户名（手机号）
+		String loginPasswd=null;// abcdefg N 密码
+		String custNo=null; // 登录返回的用户唯一标识
+		String opeInfos =null;// 同步基金list jsonArray;
+	</function>
+
+	<function name="ParTrustContent" funcdescribe="获取信托详情"
+		return="TrustDetailInfo" url="trust/detail.protobuf">
+		String id=null;// N 固定收益产品id;
+	</function>
+
+	<function name="ParTrustList" funcdescribe="获取固定收益列表" return="TrustInfoList"
+		url="trust/list.protobuf">
+	</function>
+
+	<function name="ParUpAndDownCount" funcdescribe="获取某只基金顶和踩的次数"
+		return="UpDown" url="updown/queryupdown.protobuf">
+		String code=null;//基金代码
+	</function>
+
+	<function name="ParUpdateCompany" funcdescribe="基金公司数据更新"
+		return="FundCompanyInfoList" url="company/infoupdate.protobuf">
+		String companyInfoVer =null;// 基金经理信息版本号;
+	</function>
+
+	<function name="ParUpdateManager" funcdescribe="基金经理数据更新"
+		return="FundManagerInfoList" url="manager/infoupdate.protobuf">
+		String managerInfoVer =null;// 基金经理信息版本号;
+	</function>
+
+	<function name="ParUpdateOpenFundBasicInfo" funcdescribe="公募基金基本信息更新"
+		return="FundBasicInfoList" url="fund/jjxx.protobuf">
+		String fundInfoVer =null;// 基金经理信息版本号;
+	</function>
+
+	<function name="ParUpdateSimuFundBasicInfo" funcdescribe="私募基金基本信息更新"
+		return="FundBasicInfoList" url="simu/jjxx.protobuf">
+		String fundInfoVer =null;// 基金经理信息版本号;
+	</function>
+
+	<function name="ParUploadContact" funcdescribe="上传联系人数据"
+		return="Common" url="common/uploadContactInfo.htm">
+		String contactsInfoList=null;
+	</function>
+
+	<function name="ParUpOrDownFund" funcdescribe="顶或踩某只基金"
+		return="UpDown" url="updown/addupdown.protobuf">
+		int code=0;// Int   基金代码
+		String type=null;//     类型
+		String custid=null;//     用户id
+		int action =1;//    0:踩 1: 顶.
+	</function>
+
+</interfaces>

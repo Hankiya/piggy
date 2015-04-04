@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="36dp" >
+
+    <LinearLayout
+        android:id="@+id/lay_share_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:scaleType="fitXY"  android:duplicateParentState="true"
+            android:src="@drawable/xml_share_weixin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"  android:duplicateParentState="true"
+            android:text="@string/share_weixin"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_share_weixin_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"  android:duplicateParentState="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/xml_share_weixin_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"  android:duplicateParentState="true"
+            android:text="@string/share_weixin_circle"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_share_weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:scaleType="fitXY"  android:duplicateParentState="true"
+            android:src="@drawable/xml_share_weibo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"  android:duplicateParentState="true"
+            android:text="@string/share_weibo"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_share_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lay_share_weixin"
+        android:layout_marginTop="34dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView android:layout_width="54dp"
+	android:layout_height="54dp" android:scaleType="fitXY"
+	android:duplicateParentState="true" android:src="@drawable/xml_share_more" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/share_more"
+             android:duplicateParentState="true"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

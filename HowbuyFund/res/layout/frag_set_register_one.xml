@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="36dp" >
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:hint="@string/set_feedback_edit_hint_phone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="#333"
+            android:textColorHint="#7f999999"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="31"
+            android:textColor="#333"
+            android:textColorHint="#7f999999"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/register_phone_des"
+            android:textColor="#666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.actionbarsherlock.internal.widget.IcsLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d2d2d2"
+        android:divider="@drawable/custom_tab_indicator_divider"
+        android:dividerPadding="5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_ib_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onXmlBtClick"
+            android:text="@string/step_cnacle"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_ib_bk"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onXmlBtClick"
+            android:text="@string/step_next"
+            android:textColor="#333"
+            android:textSize="18sp" />
+    </com.actionbarsherlock.internal.widget.IcsLinearLayout>
+
+</RelativeLayout>

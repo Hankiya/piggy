@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/aty_horizontal_margin"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_resume"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="@dimen/aty_horizontal_margin"
+                android:paddingRight="@dimen/aty_horizontal_margin"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/lay_achieve"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/item_head_bk"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/aty_horizontal_margin"
+                    android:text="历任情况"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <ListView
+                    android:id="@+id/lv_achieve"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:choiceMode="none"
+                    android:divider="@drawable/divider_padding"
+                    android:fadingEdge="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/item_head_bk"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/aty_horizontal_margin"
+                    android:text="相关资讯"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <ListView
+                    android:id="@+id/lv_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:choiceMode="none"
+                    android:divider="@drawable/divider_padding"
+                    android:fadingEdge="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lay_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</FrameLayout>

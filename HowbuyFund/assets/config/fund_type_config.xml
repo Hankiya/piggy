@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fund_config>
+	<sort_types typenum="11">
+		<sort_type name="基金净值" column="jjjz" id="1" /><!--0-->
+		<sort_type name="累计净值" column="ljjz" id="2" /><!--1-->
+		<sort_type name="万份收益" column="wfsy" id="3" /><!--2-->
+		<sort_type name="七日年化" column="qrsy" id="4" /><!--3-->
+		<sort_type name="日排行" column="hbdr" id="5" /><!--4-->
+		<sort_type name="月排行" column="hb1y" id="6" /><!--5-->
+		<sort_type name="年排行" column="hb1n" id="7" /><!--6-->
+		<sort_type name="三年排行" column="hb3n" id="8" /><!--7-->
+		<sort_type name="今年以来" column="hbjn" id="9" /><!--8-->
+	</sort_types>
+	<fund_types typenum="11">
+		<fund_type name="全部" datatype="0" classtype="*">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="股票型" datatype="1" classtype="1">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="货币型" datatype="2" classtype="7">
+			<fund_sort id="1" sortnum="5">2-3-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="债券型" datatype="1" classtype="5">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="混合型" datatype="1" classtype="3">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="指数型" datatype="1" classtype="8">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="QDII型" datatype="1" classtype="9">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="理财型" datatype="2" classtype="53">
+			<fund_sort id="1" sortnum="5">2-3-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="保本型" datatype="1" classtype="b">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="结构型" datatype="1" classtype="t">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="私募" datatype="3" classtype="sm">
+			<fund_sort id="0" sortnum="4">5-6-7-8</fund_sort>
+		</fund_type>
+		<fund_type name="开放式" datatype="1" classtype="o">
+			<fund_sort id="0" sortnum="4">4-5-6-8</fund_sort>
+		</fund_type>
+		<fund_type name="封闭式" datatype="4" classtype="a">
+			<fund_sort id="0" sortnum="8">4-5-6-8</fund_sort>
+		</fund_type>
+	</fund_types>
+</fund_config>

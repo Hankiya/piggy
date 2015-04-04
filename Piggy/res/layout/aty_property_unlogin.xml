@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:paddingBottom="15dp" android:id="@+id/activity_property_unlogin" android:layout_height="match_parent" android:background="@android:color/white">
+
+	<ScrollView android:layout_below="@+id/ad" android:layout_above="@+id/start_btn_unlgn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@android:color/white">
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:paddingBottom="10dp">
+			<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<include layout="@layout/lay_ad" android:visibility="gone"/>
+				<ImageView android:id="@+id/unlogn_ad" android:scaleType="centerCrop" android:layout_width="fill_parent" android:layout_height="@dimen/cicle_height" android:src="@drawable/ic_ggt"/>
+				<include layout="@layout/lay_notify"/>
+			</FrameLayout>
+			<LinearLayout android:id="@+id/contentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+				<TextView android:id="@+id/qrnh_unlgn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="七日年化收益率为 -- 是银行活期收益率的" android:gravity="center_horizontal" android:layout_marginTop="15dp" style="@style/unlgn_title"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_horizontal|bottom" android:paddingTop="15dp">
+					<LinearLayout android:layout_width="wrap_content" android:layout_gravity="center" android:gravity="center_horizontal|bottom" android:id="@+id/bei_lay" android:layout_height="wrap_content" android:orientation="horizontal">
+					</LinearLayout>
+<!-- 				<TextView android:id="@+id/doublebank_unlgn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bei_bg" android:textSize="50sp" android:text="1" android:textColor="@android:color/white" android:paddingLeft="8dp" android:paddingRight="8dp"/> -->
+<!-- 				<TextView android:id="@+id/doublebank_unlgn2" android:layout_marginLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bei_bg" android:textSize="50sp" android:text="5" android:textColor="@android:color/white" android:paddingLeft="8dp" android:paddingRight="8dp"/> -->
+<!-- 				<TextView android:layout_marginLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." android:textSize="60sp" android:textColor="#F96C57"/> -->
+<!-- 				<TextView android:id="@+id/doublebank_unlgn3" android:layout_marginLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bei_bg" android:textSize="50sp" android:text="5" android:textColor="@android:color/white" android:paddingLeft="8dp" android:paddingRight="8dp"/> -->
+				<!-- <TextView android:id="@+id/doublebank_unlgn4" android:layout_marginLeft="10dp" android:layout_width="wrap_content" android:includeFontPadding="false" android:layout_height="wrap_content" android:background="@drawable/bei_bg" android:textSize="50sp" android:text="5" android:textColor="@android:color/white" android:paddingLeft="8dp" android:paddingRight="8dp"/> -->
+					<TextView android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:text="倍" android:paddingLeft="8dp" android:paddingRight="8dp" android:textColor="#F96C57"/>
+				</LinearLayout>
+				<TextView android:id="@+id/user_num_unlgn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="已有15万人使用储蓄罐" android:gravity="center_horizontal" style="@style/unlgn_title"/>
+				<View android:layout_width="fill_parent" android:layout_height="1px" android:background="@color/btn_sure_press" android:layout_marginTop="15dp"/>
+				<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="10dp" android:layout_marginLeft="35dp" android:layout_marginRight="@dimen/activity_horizontal_margin">
+					<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="为何选择储蓄罐？" style="@style/unlgn_title"/>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="15dp" android:gravity="center_vertical">
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mf" android:contentDescription="@string/todo"/>
+						<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="10dp">
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="完全免费" style="@style/unlgn_title"/>
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="存款取钱，完全免费" style="@style/unlgn_title_scd"/>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="15dp" android:gravity="center_vertical">
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sy" android:contentDescription="@string/todo"/>
+						<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="10dp">
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="收益稳定" style="@style/unlgn_title"/>
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="去年第一，今年上半年年化超5%" style="@style/unlgn_title_scd"/>
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="15dp" android:gravity="center_vertical">
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ss" android:contentDescription="@string/todo"/>
+						<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="10dp">
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="实时到账" style="@style/unlgn_title"/>
+							<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="7×24小时随时取现，一分钟到账" style="@style/unlgn_title_scd"/>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<howbuy.android.piggy.widget.ImageTextBtn android:id="@+id/start_btn_unlgn" style="@style/piggy_text_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:background="@drawable/btn_sure_bg" android:text="开始赚钱"/>
+
+</RelativeLayout>

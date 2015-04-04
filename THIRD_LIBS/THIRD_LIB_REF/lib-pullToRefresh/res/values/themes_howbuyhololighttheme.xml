@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="HowbuyHoloLightTheme" parent="@style/Theme.Howbuytabres">
+
+    <item name="android:editTextStyle">@style/EditTextHowbuyHoloLightTheme</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewHowbuyHoloLightTheme</item>
+
+    <item name="android:checkboxStyle">@style/CheckBoxHowbuyHoloLightTheme</item>
+
+    <item name="android:radioButtonStyle">@style/RadioButtonHowbuyHoloLightTheme</item>
+
+    <item name="android:buttonStyle">@style/ButtonHowbuyHoloLightTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonHowbuyHoloLightTheme</item>
+
+    <item name="android:spinnerStyle">@style/SpinnerHowbuyHoloLightTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerHowbuyHoloLightTheme.DropDown</item>
+
+    <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemHowbuyHoloLightTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarHowbuyHoloLightTheme</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarHowbuyHoloLightTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarHowbuyHoloLightTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigHowbuyHoloLightTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallHowbuyHoloLightTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleHowbuyHoloLightTheme</item>
+
+    <item name="android:listViewStyle">@style/ListViewHowbuyHoloLightTheme</item>
+
+    <item name="android:listViewWhiteStyle">@style/ListViewHowbuyHoloLightTheme.White</item>
+
+    <item name="android:spinnerItemStyle">@style/SpinnerItemHowbuyHoloLightTheme</item>
+
+  </style>
+
+</resources>

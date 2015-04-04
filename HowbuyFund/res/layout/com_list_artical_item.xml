@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/infs_list_padding_vertical"
+    android:paddingLeft="@dimen/aty_horizontal_margin"
+    android:paddingRight="@dimen/aty_horizontal_margin"
+    android:paddingTop="@dimen/infs_list_padding_vertical" >
+
+    <TextView
+        android:id="@+id/newstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/newslable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/newstitle"
+        android:drawableLeft="@drawable/ic_news_list"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="#999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/newsdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/newslable"
+        android:textColor="#999"
+        android:textSize="12sp" />
+
+</RelativeLayout>

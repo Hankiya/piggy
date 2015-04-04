@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewswidcher"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:animateFirstView="true" >
+
+    <RelativeLayout
+        android:id="@+id/luncher_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/luncher" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Inverse" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/adload_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+         
+            <howbuy.android.piggy.widget.ImageTextBtn style="@style/piggy_text_button"
+                android:id="@+id/submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:background="@drawable/btn_luncher_bg"
+                android:text="@string/momountsavemoney" />
+            
+            
+               <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:padding="2dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</ViewSwitcher>

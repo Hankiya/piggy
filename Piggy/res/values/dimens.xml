@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_os7_top">20dp</dimen>
+    <dimen name="os7_item_spirt">10dp</dimen>
+    <dimen name="os7_item_spirt_big">20dp</dimen>
+    <dimen name="htcChart_fontSize1">12sp</dimen>
+    <dimen name="htcChart_fontSize2">14sp</dimen>
+    <dimen name="htcChart_Only_scale">70dp</dimen>
+    <dimen name="htcChart_PaddingTop">100dp</dimen>
+    <dimen name="imgBtn_padding">6dp</dimen>
+    <dimen name="piebuttomtext1">18sp</dimen>
+    <dimen name="piebuttomtext2">18sp</dimen>
+    <dimen name="piecentertext1">36sp</dimen>
+    <dimen name="piecentertext2">18sp</dimen>
+    <dimen name="piecentertext3">18sp</dimen>
+    <dimen name="call_padding_buttom">80dp</dimen>
+    <dimen name="btn_bg_round">2dp</dimen>
+    <dimen name="cicle_height">100dp</dimen>
+    <dimen name="text_bei_size">50sp</dimen>
+    <dimen name="text_bei_padding">8dp</dimen>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:layout_marginTop="1dp"
+	android:background="#fff" android:gravity="center_vertical"
+	android:paddingBottom="@dimen/infs_list_padding_vertical"
+	android:paddingLeft="@dimen/details_margin_horizonal"
+	android:paddingRight="@dimen/details_margin_horizonal"
+	android:paddingTop="@dimen/infs_list_padding_vertical">
+
+	<TextView android:id="@+id/tv_cycle" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:minWidth="70sp"
+		android:text="近一个月" android:textColor="#333" android:textSize="16sp" />
+
+	<TextView android:id="@+id/tv_value" android:layout_height="wrap_content"
+		android:minWidth="70sp" android:layout_width="wrap_content"
+		android:text="-124.21%" android:fontFamily="medium" android:gravity="right"
+		android:textColor="#999" android:layout_marginLeft="10dp"
+		android:textSize="16sp" />
+
+	<TextView android:id="@+id/tv_state" style="@style/tv_normal"
+		android:singleLine="true" android:layout_width="0dp"
+		android:layout_height="wrap_content" android:textColor="#999"
+		android:layout_weight="5" android:text="第125名，总459只" android:gravity="right"
+		android:textSize="16sp" />
+
+</LinearLayout>

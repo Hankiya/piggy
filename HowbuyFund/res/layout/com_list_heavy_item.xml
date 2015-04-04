@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ASDFHJKL"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/details_holddetails_list_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/aty_horizontal_margin"
+    android:paddingRight="@dimen/aty_horizontal_margin"
+    android:paddingTop="@dimen/infs_list_padding_vertical"
+    android:paddingBottom="@dimen/infs_list_padding_vertical" >
+
+    <View
+        android:id="@+id/v_color"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="12dp"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_increase"
+        android:layout_width="dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="right"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+</LinearLayout>

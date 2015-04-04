@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_share"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_share"
+        android:title="share"/>
+    <item
+        android:id="@+id/menu_font"
+        android:showAsAction="always"
+        android:title="font"/>
+    <item
+        android:id="@+id/menu_more"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="more">
+        <menu>
+            <item
+                android:id="@+id/menu_collect"
+                android:title="@string/menu_text_collect"/>
+        </menu>
+    </item>
+
+</menu>

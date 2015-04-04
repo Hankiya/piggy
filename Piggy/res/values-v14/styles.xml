@@ -1,0 +1,23 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+<style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+    -->    
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/windowscolor</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+
+</resources>
